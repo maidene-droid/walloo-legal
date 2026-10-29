@@ -1,618 +1,486 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — Walloo: 4K Wallpapers</title>
-  <style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Walloo: 4K Wallpapers</title>
+<meta name="description" content="How Walloo: 4K Wallpapers (com.walloo.wallpapper) collects, uses and shares information — in plain language.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='112' fill='%2315130F'/%3E%3Cpath d='M99 249a157 157 0 0 1 314 0z' fill='%23E4DDCE'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F0EEE9;
+    --card: #FAF8F4;
+    --ink: #15130F;
+    --ink-soft: #4A463F;
+    --mist: #7A756C;
+    --line: #DEDAD2;
+    --sage: #6F7C63;
+    --sage-bg: #E6E9E0;
+    --chip: #ECE8E0;
+    --shadow: 0 1px 2px rgba(21,19,15,.04), 0 8px 24px rgba(21,19,15,.05);
+  }
+  @media (prefers-color-scheme: dark) {
     :root {
-      --bg:       #0f0f13;
-      --surface:  #18181f;
-      --border:   #2a2a38;
-      --accent:   #f59e0b;
-      --text:     #e8e8f0;
-      --muted:    #8888a8;
-      --radius:   14px;
+      --bg: #15130F;
+      --card: #1D1B17;
+      --ink: #F2EEE6;
+      --ink-soft: #CFC9BE;
+      --mist: #9B958A;
+      --line: #2E2B25;
+      --sage: #A7B39A;
+      --sage-bg: #232720;
+      --chip: #26231E;
+      --shadow: none;
     }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 16px/1.65 "Geist", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  a { color: inherit; text-decoration: underline; text-decoration-color: var(--sage); text-underline-offset: 3px; }
+  a:hover { text-decoration-thickness: 2px; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 20px 80px; }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+  /* ── Header ─────────────────────────────────────────── */
+  header.top {
+    display: flex; align-items: center; gap: 14px;
+    padding: 28px 0 18px;
+  }
+  .logo { width: 48px; height: 48px; flex: none; border-radius: 12px; display: block; }
+  .brand { font-weight: 600; font-size: 22px; letter-spacing: -.02em; line-height: 1.1; }
+  .brand small { display: block; font: 500 12px/1.4 "Geist Mono", ui-monospace, monospace; letter-spacing: .08em; text-transform: uppercase; color: var(--mist); margin-top: 3px; }
 
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-size: 15px;
-      line-height: 1.75;
-      padding: 0 16px 80px;
-    }
+  .hero { padding: 36px 0 28px; border-top: 1px solid var(--line); }
+  .eyebrow { font: 500 12px/1 "Geist Mono", ui-monospace, monospace; letter-spacing: .14em; text-transform: uppercase; color: var(--sage); }
+  h1 { font-size: clamp(34px, 6vw, 52px); line-height: 1.05; letter-spacing: -.035em; font-weight: 600; margin: 14px 0 16px; }
+  .lede { font-size: 18px; color: var(--ink-soft); max-width: 640px; margin: 0; }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+  .chip { background: var(--chip); border-radius: 999px; padding: 6px 12px; font-size: 13px; color: var(--ink-soft); }
 
-    .wrapper {
-      max-width: 760px;
-      margin: 0 auto;
-    }
+  /* ── At a glance ────────────────────────────────────── */
+  .glance { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 8px 0 36px; }
+  .g {
+    background: var(--card); border: 1px solid var(--line); border-radius: 20px;
+    padding: 18px 18px 16px; box-shadow: var(--shadow);
+  }
+  .g b { display: block; font-weight: 600; font-size: 15.5px; margin-bottom: 4px; letter-spacing: -.01em; }
+  .g p { margin: 0; font-size: 14.5px; color: var(--ink-soft); line-height: 1.55; }
+  .g .ic { width: 28px; height: 28px; border-radius: 9px; background: var(--sage-bg); color: var(--sage); display: grid; place-items: center; margin-bottom: 12px; }
+  .g .ic svg { width: 16px; height: 16px; }
 
-    /* ── Header ── */
-    header {
-      padding: 56px 0 36px;
-      border-bottom: 1px solid var(--border);
-      margin-bottom: 40px;
-    }
+  /* ── Contents ───────────────────────────────────────── */
+  nav.toc {
+    background: var(--card); border: 1px solid var(--line); border-radius: 20px;
+    padding: 20px 22px; margin-bottom: 40px;
+  }
+  nav.toc h2 { font-size: 13px; font-family: "Geist Mono", ui-monospace, monospace; letter-spacing: .12em; text-transform: uppercase; color: var(--mist); margin: 0 0 12px; font-weight: 500; }
+  nav.toc ol { margin: 0; padding: 0; list-style: none; columns: 2 260px; column-gap: 28px; counter-reset: t; }
+  nav.toc li { counter-increment: t; break-inside: avoid; padding: 4px 0; font-size: 15px; }
+  nav.toc li::before { content: counter(t, decimal-leading-zero); font: 500 12px "Geist Mono", ui-monospace, monospace; color: var(--mist); margin-right: 10px; }
+  nav.toc a { text-decoration: none; }
+  nav.toc a:hover { text-decoration: underline; }
 
-    .logo {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 20px;
-    }
+  /* ── Sections ───────────────────────────────────────── */
+  section { padding: 30px 0 6px; border-top: 1px solid var(--line); scroll-margin-top: 16px; }
+  section h2 { display: flex; align-items: baseline; gap: 12px; font-size: 26px; letter-spacing: -.025em; line-height: 1.2; margin: 0 0 14px; font-weight: 600; }
+  section h2 .n { font: 500 13px "Geist Mono", ui-monospace, monospace; color: var(--sage); letter-spacing: .06em; flex: none; }
+  h3 { font-size: 17px; margin: 24px 0 8px; letter-spacing: -.01em; font-weight: 600; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 16px; padding-left: 20px; }
+  li { margin: 5px 0; }
+  .muted { color: var(--mist); }
+  .note {
+    background: var(--sage-bg); border-radius: 16px; padding: 14px 16px; margin: 16px 0;
+    font-size: 15px; color: var(--ink-soft);
+  }
+  .note b { color: var(--ink); }
 
-    .logo-icon {
-      width: 42px;
-      height: 42px;
-      background: linear-gradient(135deg, #f59e0b, #ff8c42);
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 22px;
-    }
+  .table { width: 100%; overflow-x: auto; margin: 10px 0 18px; border: 1px solid var(--line); border-radius: 16px; background: var(--card); }
+  table { border-collapse: collapse; width: 100%; font-size: 14.5px; min-width: 560px; }
+  th, td { text-align: left; vertical-align: top; padding: 11px 14px; border-bottom: 1px solid var(--line); }
+  th { font: 500 12px "Geist Mono", ui-monospace, monospace; letter-spacing: .08em; text-transform: uppercase; color: var(--mist); background: transparent; }
+  tr:last-child td { border-bottom: 0; }
+  td b { font-weight: 600; }
 
-    .logo-name {
-      font-size: 20px;
-      font-weight: 700;
-      color: var(--text);
-      letter-spacing: -0.3px;
-    }
+  .steps { counter-reset: s; list-style: none; padding: 0; }
+  .steps li { counter-increment: s; position: relative; padding-left: 38px; margin: 10px 0; }
+  .steps li::before {
+    content: counter(s); position: absolute; left: 0; top: 1px;
+    width: 26px; height: 26px; border-radius: 50%; background: var(--ink); color: var(--bg);
+    font: 600 13px/26px "Geist", sans-serif; text-align: center;
+  }
 
-    header h1 {
-      font-size: 32px;
-      font-weight: 800;
-      letter-spacing: -0.8px;
-      color: #fff;
-      margin-bottom: 10px;
-    }
+  .contact {
+    background: var(--ink); color: var(--bg); border-radius: 24px; padding: 26px 24px; margin: 18px 0 8px;
+  }
+  .contact .eyebrow { color: #A7B39A; }
+  .contact h3 { color: var(--bg); font-size: 22px; margin: 10px 0 6px; }
+  .contact p { color: color-mix(in srgb, var(--bg) 78%, transparent); margin: 0 0 6px; }
+  .contact a { color: var(--bg); text-decoration-color: #A7B39A; }
 
-    .meta {
-      color: var(--muted);
-      font-size: 13px;
-    }
+  footer { margin-top: 48px; padding-top: 22px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; color: var(--mist); font-size: 13.5px; }
+  footer .logo { width: 22px; height: 22px; border-radius: 6px; }
 
-    .meta span {
-      display: inline-block;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      padding: 3px 10px;
-      margin-right: 8px;
-    }
-
-    /* ── Sections ── */
-    section {
-      margin-bottom: 40px;
-    }
-
-    h2 {
-      font-size: 19px;
-      font-weight: 700;
-      color: #fff;
-      letter-spacing: -0.3px;
-      margin-bottom: 14px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    h2 .num {
-      display: inline-block;
-      width: 26px;
-      height: 26px;
-      background: linear-gradient(135deg, #f59e0b44, #ff8c4233);
-      border: 1px solid #f59e0b55;
-      border-radius: 8px;
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--accent);
-      text-align: center;
-      line-height: 26px;
-      margin-right: 10px;
-    }
-
-    p { margin-bottom: 12px; color: var(--text); }
-
-    ul, ol {
-      padding-left: 20px;
-      margin-bottom: 14px;
-    }
-
-    li { margin-bottom: 6px; }
-
-    /* ── Table ── */
-    .table-wrap { overflow-x: auto; margin-bottom: 16px; }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 14px;
-    }
-
-    th {
-      background: var(--surface);
-      color: var(--accent);
-      font-weight: 600;
-      text-align: left;
-      padding: 10px 14px;
-      border: 1px solid var(--border);
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 0.8px;
-    }
-
-    td {
-      padding: 10px 14px;
-      border: 1px solid var(--border);
-      vertical-align: top;
-      color: var(--text);
-    }
-
-    tr:nth-child(even) td { background: #14141a; }
-
-    /* ── Callout ── */
-    .callout {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-left: 3px solid var(--accent);
-      border-radius: var(--radius);
-      padding: 16px 20px;
-      margin-bottom: 16px;
-      font-size: 14px;
-    }
-
-    .callout.info  { border-left-color: #3b82f6; }
-    .callout.warn  { border-left-color: #f59e0b; }
-    .callout.good  { border-left-color: #10b981; }
-
-    .callout strong { color: #fff; display: block; margin-bottom: 4px; }
-
-    /* ── Contact card ── */
-    .contact-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 24px;
-    }
-
-    .contact-card a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    .contact-card a:hover { text-decoration: underline; }
-
-    /* ── Footer ── */
-    footer {
-      margin-top: 60px;
-      padding-top: 24px;
-      border-top: 1px solid var(--border);
-      text-align: center;
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    strong { color: #fff; font-weight: 600; }
-  </style>
+  @media (max-width: 520px) {
+    .wrap { padding: 0 16px 64px; }
+    .lede { font-size: 16.5px; }
+    section h2 { font-size: 23px; }
+  }
+  @media print {
+    body { background: #fff; color: #000; }
+    .glance, nav.toc { break-inside: avoid; }
+    .contact { background: #fff; color: #000; border: 1px solid #ccc; }
+    .contact h3, .contact p, .contact a { color: #000; }
+  }
+</style>
 </head>
 <body>
-<div class="wrapper">
+<div class="wrap">
 
-  <!-- ─── HEADER ──────────────────────────────────────────────────────── -->
-  <header>
-    <div class="logo">
-      <div class="logo-icon">🖼️</div>
-      <span class="logo-name">Walloo</span>
-    </div>
-    <h1>Privacy Policy</h1>
-    <div class="meta">
-      <span>Effective: June 1, 2025</span>
-      <span>Last updated: June 1, 2025</span>
-      <span>Version 1.0</span>
-    </div>
+  <header class="top">
+    <svg class="logo" viewBox="0 0 512 512" role="img" aria-label="Walloo logo">
+      <defs><clipPath id="lower"><circle cx="256" cy="267" r="156"/></clipPath></defs>
+      <rect width="512" height="512" rx="112" fill="#15130F"/>
+      <path d="M99 249a157 157 0 0 1 314 0z" fill="#E4DDCE"/>
+      <g clip-path="url(#lower)">
+        <rect x="80" y="266" width="352" height="35" fill="#AAA498"/>
+        <rect x="80" y="320" width="352" height="30" fill="#747067"/>
+        <rect x="80" y="369" width="352" height="26" fill="#47433D"/>
+      </g>
+    </svg>
+    <div class="brand">Walloo<small>4K Wallpapers</small></div>
   </header>
 
-  <!-- ─── INTRO ────────────────────────────────────────────────────────── -->
-  <section>
-    <p>
-      Welcome to <strong>Walloo</strong> ("we", "our", or "us"). This Privacy Policy
-      explains how we collect, use, store, and share information when you use the Walloo
-      mobile application ("App") available on Google Play.
-    </p>
-    <p>
-      By installing or using the App, you agree to the practices described in this policy.
-      If you do not agree, please uninstall the App and discontinue use.
-    </p>
-    <div class="callout good">
-      <strong>Our commitment</strong>
-      We collect only what is necessary to provide the service. We do not sell your personal
-      data to third parties.
+  <div class="hero">
+    <div class="eyebrow">Privacy Policy</div>
+    <h1>Your wallpapers.<br>Your data. Plainly explained.</h1>
+    <p class="lede">This policy explains exactly what the Walloo app collects, why, who it is shared with, how long it is kept, and how you can control or delete it. No legalese where plain words will do.</p>
+    <div class="meta">
+      <span class="chip">Effective 29 October 2026</span>
+      <span class="chip">Version 2.0</span>
+      <span class="chip">Applies to app version 4.3.5 and later</span>
     </div>
+  </div>
+
+  <div class="glance" aria-label="At a glance">
+    <div class="g">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></div>
+      <b>No account needed</b>
+      <p>You can use Walloo without signing in. Signing in with Google is optional and only syncs your favorites and lets you publish collections.</p>
+    </div>
+    <div class="g">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+      <b>We never sell your data</b>
+      <p>We do not sell or rent personal information. It is shared only with the service providers listed in this policy, for the purposes listed.</p>
+    </div>
+    <div class="g">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8"/></svg></div>
+      <b>Ads only on the free version</b>
+      <p>The free version shows ads from Google AdMob and its partners. You choose about personalised ads. Walloo Pro has no ads.</p>
+    </div>
+    <div class="g">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+      <b>No location, camera, contacts or photos</b>
+      <p>Walloo never asks for your location, camera, microphone or contacts, and it never reads the photos on your phone.</p>
+    </div>
+    <div class="g">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14"/></svg></div>
+      <b>Delete everything, any time</b>
+      <p>Delete your account from inside the app in a few taps, or ask us by email. Uninstalling removes everything stored on your phone.</p>
+    </div>
+    <div class="g">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M4 9h16M9 20V9"/></svg></div>
+      <b>Most things stay on your phone</b>
+      <p>Settings, history, your Auto Wallpaper queue and Live wallpaper motion all stay on your device and are never sent to us.</p>
+    </div>
+  </div>
+
+  <nav class="toc" aria-label="Contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#who">Who we are</a></li>
+      <li><a href="#summary">What we collect — summary</a></li>
+      <li><a href="#account">Google sign-in, sync and Community</a></li>
+      <li><a href="#auto">Data collected automatically</a></li>
+      <li><a href="#device">What stays on your device</a></li>
+      <li><a href="#ads">Advertising</a></li>
+      <li><a href="#purchases">Purchases and Walloo Pro</a></li>
+      <li><a href="#images">Wallpaper images and their sources</a></li>
+      <li><a href="#notifications">Notifications</a></li>
+      <li><a href="#permissions">Permissions</a></li>
+      <li><a href="#use">How and why we use data</a></li>
+      <li><a href="#sharing">Who we share data with</a></li>
+      <li><a href="#retention">How long data is kept</a></li>
+      <li><a href="#transfers">Where data is processed</a></li>
+      <li><a href="#rights">Your rights and choices</a></li>
+      <li><a href="#delete">Deleting your account and data</a></li>
+      <li><a href="#children">Children</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+
+  <section id="who">
+    <h2><span class="n">01</span>Who we are</h2>
+    <p>Walloo: 4K Wallpapers ("Walloo", "we", "us") is an Android app for browsing and setting wallpapers, published on Google Play under the package name <b>com.walloo.wallpapper</b>. The developer of Walloo is the data controller responsible for the personal data described here.</p>
+    <p>This policy covers the Walloo app and the Walloo web pages that link to it. Third-party services used by the app (for example Google, Meta and Unity) also have their own privacy policies, linked in <a href="#sharing">section 12</a>.</p>
   </section>
 
-  <!-- ─── 1. DATA WE COLLECT ───────────────────────────────────────────── -->
-  <section>
-    <h2><span class="num">1</span>Data We Collect</h2>
-
-    <p>We collect the following categories of data:</p>
-
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>Category</th>
-            <th>Data</th>
-            <th>Source</th>
-            <th>Required?</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Account data</strong></td>
-            <td>Google account name, email address, profile photo URL</td>
-            <td>Google Sign-In (optional)</td>
-            <td>No — only if you sign in</td>
-          </tr>
-          <tr>
-            <td><strong>Location data</strong></td>
-            <td>Approximate or precise device location</td>
-            <td>Device GPS / network (with permission)</td>
-            <td>No — only for Weather Walls feature</td>
-          </tr>
-          <tr>
-            <td><strong>Purchase data</strong></td>
-            <td>Purchase status, product ID, transaction token</td>
-            <td>Google Play Billing</td>
-            <td>No — only if you purchase Premium</td>
-          </tr>
-          <tr>
-            <td><strong>Analytics data</strong></td>
-            <td>Screen views, in-app events, session duration, device model, OS version, language</td>
-            <td>Firebase Analytics (automatic)</td>
-            <td>Yes — used to improve the App</td>
-          </tr>
-          <tr>
-            <td><strong>Crash &amp; diagnostic data</strong></td>
-            <td>Stack traces, device state at time of crash, app version</td>
-            <td>Firebase Crashlytics (automatic)</td>
-            <td>Yes — used to fix bugs</td>
-          </tr>
-          <tr>
-            <td><strong>Advertising identifiers</strong></td>
-            <td>Advertising ID (GAID), IP address (hashed)</td>
-            <td>Google AdMob (only for free-tier users)</td>
-            <td>No — not collected for Premium users</td>
-          </tr>
-          <tr>
-            <td><strong>Local preferences</strong></td>
-            <td>Favorite wallpapers, recently viewed, settings, daily streak</td>
-            <td>Stored locally on device only</td>
-            <td>Yes — core app functionality</td>
-          </tr>
-          <tr>
-            <td><strong>Push notification token</strong></td>
-            <td>FCM device token</td>
-            <td>Firebase Messaging</td>
-            <td>No — only if notifications are enabled</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="callout info">
-      <strong>What we do NOT collect</strong>
-      We do not collect your wallpaper browsing history on our servers, your contacts,
-      your messages, your photos or files, or any biometric data.
-    </div>
+  <section id="summary">
+    <h2><span class="n">02</span>What we collect — summary</h2>
+    <div class="table"><table>
+      <thead><tr><th>Data</th><th>When</th><th>Why</th><th>Leaves your phone?</th></tr></thead>
+      <tbody>
+        <tr><td><b>Google account</b>: name, email, profile photo, account ID</td><td>Only if you sign in</td><td>Your account, favorites sync, Community</td><td>Yes — Firebase (Google)</td></tr>
+        <tr><td><b>Favorites and folders</b></td><td>Always on your phone; in the cloud only if you sign in</td><td>Keep and sync your favorites</td><td>Only when signed in</td></tr>
+        <tr><td><b>Published collections</b>: name, photos, your display name and profile photo</td><td>Only if you publish a collection</td><td>Show it in Community</td><td>Yes — and visible to everyone</td></tr>
+        <tr><td><b>App usage events</b>, device and app information</td><td>Automatically</td><td>Understand and improve the app</td><td>Yes — Firebase Analytics</td></tr>
+        <tr><td><b>Crash reports</b></td><td>When the app crashes or hits an error</td><td>Find and fix bugs</td><td>Yes — Firebase Crashlytics</td></tr>
+        <tr><td><b>Advertising ID</b>, IP address, device information</td><td>Free version only</td><td>Show and measure ads, prevent fraud</td><td>Yes — AdMob and ad partners</td></tr>
+        <tr><td><b>Purchase status</b></td><td>When you buy or restore Walloo Pro</td><td>Unlock Pro</td><td>Handled by Google Play</td></tr>
+        <tr><td><b>Notification token</b></td><td>If notifications are on</td><td>Send the wallpaper-of-the-day and updates</td><td>Yes — Firebase Cloud Messaging</td></tr>
+        <tr><td><b>Settings, history, interest in categories, Auto Wallpaper queue, Live settings</b></td><td>As you use the app</td><td>Make the app work and feel personal</td><td>No — stays on your phone</td></tr>
+      </tbody>
+    </table></div>
+    <div class="note"><b>We do not collect:</b> your location, contacts, messages, call logs, microphone or camera input, the photos or files on your phone, your browsing history outside the app, or any biometric or health data.</div>
   </section>
 
-  <!-- ─── 2. HOW WE USE YOUR DATA ──────────────────────────────────────── -->
-  <section>
-    <h2><span class="num">2</span>How We Use Your Data</h2>
+  <section id="account">
+    <h2><span class="n">03</span>Google sign-in, sync and Community</h2>
+    <h3>Signing in (optional)</h3>
+    <p>You can sign in with your Google account through Firebase Authentication. We then receive your <b>name, email address, profile photo link and a Google account identifier</b>. We never see your Google password.</p>
+    <h3>Favorites sync</h3>
+    <p>When you are signed in, your favorite wallpapers and folders are saved in our cloud database (Google Cloud Firestore) so they are available after reinstalling or on another phone. What is saved is the list of wallpapers (their links, sizes and credits) and your folder names — not files from your phone.</p>
+    <h3>Community collections</h3>
+    <p>If you publish a collection, it becomes <b>public</b>: anyone using Walloo can see the collection name, the wallpapers in it, and your <b>display name and profile photo</b> as its curator. Others can like and save it. You can unpublish or delete your collections at any time, and they are deleted with your account.</p>
+    <p class="muted">If you never sign in, none of the above applies: nothing is linked to an account and your favorites stay only on your phone.</p>
+  </section>
 
+  <section id="auto">
+    <h2><span class="n">04</span>Data collected automatically</h2>
+    <h3>Firebase Analytics (Google)</h3>
+    <p>We record how the app is used, for example which screens are opened, which categories are browsed, when a wallpaper is set or downloaded, when a paywall or an ad is shown, and when the app crashes. Each event comes with an app-instance identifier, the device model, Android version, app version, language, approximate country (derived from the IP address) and session information. We also tag which version of an experiment you see (for example, which tab layout). We use this only in aggregate to improve Walloo. We do <b>not</b> link analytics to your name or email.</p>
+    <h3>Firebase Crashlytics (Google)</h3>
+    <p>If the app crashes or hits an error, a crash report is sent with the technical details: the error and stack trace, the device model, Android version, app version, memory and disk state, and an installation identifier. Crash reports do not contain your name or email.</p>
+    <h3>Firebase Remote Config and Installations (Google)</h3>
+    <p>The app downloads its settings (for example feature switches and how often ads appear) from Firebase. This uses a random installation identifier.</p>
+    <h3>Google Play services</h3>
+    <p>Google Play may check for app updates (In-App Updates) and may show its own rating dialog (In-App Review). Google handles these directly; we do not see your review or your Play account.</p>
+  </section>
+
+  <section id="device">
+    <h2><span class="n">05</span>What stays on your device</h2>
+    <p>The following is stored only on your phone and is <b>never sent to us</b>. It is erased when you clear the app's data or uninstall it.</p>
     <ul>
-      <li><strong>To provide core features</strong> — search, display, and set wallpapers; favorites; auto-wallpaper scheduling.</li>
-      <li><strong>To personalize content</strong> — show weather-appropriate wallpapers based on your approximate location (only when you grant permission).</li>
-      <li><strong>To process purchases</strong> — verify and unlock Premium or Remove-Ads entitlements via Google Play.</li>
-      <li><strong>To show ads</strong> — free-tier users see non-personalized or personalized ads through Google AdMob. Premium / Remove-Ads users see no ads.</li>
-      <li><strong>To improve the App</strong> — aggregate analytics and crash data help us identify and fix issues and prioritize features.</li>
-      <li><strong>To send notifications</strong> — optional push notifications about new collections or features (you can disable these at any time in device settings).</li>
-      <li><strong>To comply with legal obligations</strong> — where required by applicable law.</li>
+      <li>Your settings, favorites (when not signed in), recently viewed wallpapers and download history.</li>
+      <li>A simple score of which categories you like, used to personalise your feed. It is calculated and kept on your phone only.</li>
+      <li>Your Auto Wallpaper schedule and queue, and a local library of wallpapers prepared for your feed.</li>
+      <li>Your Live wallpaper settings. <b>Live wallpapers react to how you tilt your phone using the motion sensor. Sensor readings are used instantly to move the image and are never stored or sent anywhere.</b></li>
+      <li>Your Walloo Pro status, kept in encrypted storage.</li>
+      <li>Cached images, so wallpapers load faster and use less data.</li>
     </ul>
+    <p>Wallpapers you download are saved to your phone's Pictures folder. Wallpapers you set are applied by Android on your device.</p>
+  </section>
 
-    <p>
-      We process your data on the following legal bases (GDPR Article 6):
-    </p>
+  <section id="ads">
+    <h2><span class="n">06</span>Advertising</h2>
+    <p>The free version of Walloo is supported by ads: native ads in the wallpaper grids, full-screen ads between some actions, and optional rewarded ads you choose to watch (for example to unlock a download or one free Live wallpaper per day).</p>
+    <h3>Who serves the ads</h3>
     <ul>
-      <li><strong>Performance of a contract</strong> — to deliver the services you use (Art. 6(1)(b)).</li>
-      <li><strong>Legitimate interests</strong> — analytics and crash reporting to maintain a functional, secure app (Art. 6(1)(f)).</li>
-      <li><strong>Consent</strong> — location access, personalized advertising, and push notifications (Art. 6(1)(a)).</li>
+      <li><b>Google AdMob</b> (Google LLC), which runs the ad auction.</li>
+      <li>Ad networks that compete in AdMob's auction (mediation): <b>Meta Audience Network</b> (Meta Platforms) and <b>Unity Ads</b> (Unity Technologies).</li>
+      <li>Other advertising partners that Google AdMob works with. The current list is shown in the consent message and on <a href="https://support.google.com/admob/answer/9012903" rel="noopener">Google's ad technology providers page</a>.</li>
     </ul>
-  </section>
-
-  <!-- ─── 3. THIRD-PARTY SERVICES ──────────────────────────────────────── -->
-  <section>
-    <h2><span class="num">3</span>Third-Party Services</h2>
-
-    <p>The App integrates the following third-party SDKs and APIs. Each party has its own privacy policy:</p>
-
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>Service</th>
-            <th>Provider</th>
-            <th>Purpose</th>
-            <th>Privacy Policy</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Firebase Analytics</td>
-            <td>Google LLC</td>
-            <td>Usage analytics</td>
-            <td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td>
-          </tr>
-          <tr>
-            <td>Firebase Crashlytics</td>
-            <td>Google LLC</td>
-            <td>Crash reporting</td>
-            <td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td>
-          </tr>
-          <tr>
-            <td>Firebase Authentication</td>
-            <td>Google LLC</td>
-            <td>Google Sign-In</td>
-            <td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td>
-          </tr>
-          <tr>
-            <td>Firebase Messaging</td>
-            <td>Google LLC</td>
-            <td>Push notifications</td>
-            <td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td>
-          </tr>
-          <tr>
-            <td>Firebase Remote Config</td>
-            <td>Google LLC</td>
-            <td>Feature flags</td>
-            <td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td>
-          </tr>
-          <tr>
-            <td>Google AdMob</td>
-            <td>Google LLC</td>
-            <td>In-app advertising</td>
-            <td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td>
-          </tr>
-          <tr>
-            <td>Google Play Billing</td>
-            <td>Google LLC</td>
-            <td>In-app purchases</td>
-            <td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td>
-          </tr>
-          <tr>
-            <td>Pexels API</td>
-            <td>Canva Pty Ltd</td>
-            <td>Wallpaper images</td>
-            <td><a href="https://www.pexels.com/privacy-policy/" target="_blank">pexels.com/privacy-policy</a></td>
-          </tr>
-          <tr>
-            <td>Unsplash API</td>
-            <td>Unsplash Inc.</td>
-            <td>Wallpaper images</td>
-            <td><a href="https://unsplash.com/privacy" target="_blank">unsplash.com/privacy</a></td>
-          </tr>
-          <tr>
-            <td>Pixabay API</td>
-            <td>Braxmeier &amp; Steinberger GbR</td>
-            <td>Wallpaper images</td>
-            <td><a href="https://pixabay.com/service/privacy/" target="_blank">pixabay.com/service/privacy</a></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="callout warn">
-      <strong>Note on image APIs</strong>
-      When the App fetches wallpapers, your request is sent to the respective API provider.
-      The provider may log your IP address as part of standard web server operations.
-      We do not share any personally identifiable information with these providers.
-    </div>
-  </section>
-
-  <!-- ─── 4. LOCATION DATA ──────────────────────────────────────────────── -->
-  <section>
-    <h2><span class="num">4</span>Location Data</h2>
-
-    <p>
-      The App may request access to your device's location (precise or approximate) solely
-      to power the <strong>Weather Walls</strong> feature, which displays wallpapers matching
-      your current weather and time of day.
-    </p>
+    <h3>What they collect</h3>
+    <p>To show, measure and protect ads, these providers may collect your device's <b>Advertising ID</b>, IP address, device and app information, and how you interact with ads. With your consent this can be used for <b>personalised ads</b>; otherwise they show non-personalised or limited ads based on context.</p>
+    <h3>Your choices</h3>
     <ul>
-      <li>Location access is <strong>optional</strong>. The App functions fully without it.</li>
-      <li>Location is fetched <strong>on-demand</strong> only when the feature is active — it is not tracked continuously in the background.</li>
-      <li>Your coordinates are sent to the <strong>OpenWeatherMap API</strong> to retrieve current weather conditions. They are not stored on our servers.</li>
-      <li>You can revoke location permission at any time via <strong>Android Settings → Apps → Walloo → Permissions</strong>.</li>
+      <li><b>Consent:</b> in the European Economic Area, the UK and Switzerland, Walloo shows Google's consent message the first time you open the app, before ads are personalised. You can change your choice at any time in <b>Walloo → Settings → Ad choices</b>.</li>
+      <li><b>Advertising ID:</b> you can reset or delete it in <b>Android Settings → Privacy → Ads</b> (the exact path varies by phone).</li>
+      <li><b>No ads at all:</b> Walloo Pro removes all ads.</li>
     </ul>
+    <p>Our ad requests are <b>not</b> marked as directed to children; see <a href="#children">section 17</a>.</p>
   </section>
 
-  <!-- ─── 5. ADVERTISING ───────────────────────────────────────────────── -->
-  <section>
-    <h2><span class="num">5</span>Advertising</h2>
+  <section id="purchases">
+    <h2><span class="n">07</span>Purchases and Walloo Pro</h2>
+    <p>Walloo Pro is sold as a monthly subscription, a yearly subscription or a one-time lifetime purchase, all through <b>Google Play Billing</b>. Google processes your payment; <b>we never see your card or bank details</b>.</p>
+    <p>The app receives from Google Play which product you bought, whether the purchase is active, and a purchase token. These stay on your phone and are used only to unlock Pro and to restore it. You manage or cancel subscriptions in the Google Play Store.</p>
+  </section>
 
-    <p>
-      Free-tier users may see ads served by <strong>Google AdMob</strong>, including native
-      ads and interstitial ads. AdMob may use your Advertising ID (GAID) and other signals
-      to serve personalized or contextual ads.
-    </p>
+  <section id="images">
+    <h2><span class="n">08</span>Wallpaper images and their sources</h2>
+    <p>Walloo's wallpapers come from three photo services: <b>Unsplash</b>, <b>Pexels</b> and <b>Pixabay</b>. Photographers are credited in the app.</p>
     <ul>
-      <li>You can opt out of personalized ads via <strong>Android Settings → Google → Ads → Opt out of Ads Personalization</strong>.</li>
-      <li>Users who purchase <strong>Premium</strong> or <strong>Remove Ads</strong> see no advertisements.</li>
-      <li>We comply with Google's <a href="https://support.google.com/admob/answer/6128543" target="_blank">AdMob policies</a> and applicable data protection laws.</li>
+      <li>Many feeds are prepared once a day on our server and delivered from our database; those requests do not involve your data.</li>
+      <li>When you search, scroll far, or open a photographer's page, your phone may request images directly from these services. Like any website, they receive your <b>IP address</b> and basic device information as part of the request. We do not send them your name, email or account.</li>
+      <li>Some image links expire and are refreshed automatically; this sends only the photo's ID.</li>
     </ul>
+    <p>When you share a wallpaper, Android's share menu opens with a link to the photo's source page; the app you choose then handles it.</p>
   </section>
 
-  <!-- ─── 6. DATA STORAGE & RETENTION ─────────────────────────────────── -->
-  <section>
-    <h2><span class="num">6</span>Data Storage &amp; Retention</h2>
-
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>Data type</th>
-            <th>Where stored</th>
-            <th>Retention period</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Favorites, recently viewed, settings, streak</td>
-            <td>Device only (SharedPreferences)</td>
-            <td>Until you uninstall the App or clear app data</td>
-          </tr>
-          <tr>
-            <td>Account data (if signed in)</td>
-            <td>Firebase Auth (Google servers)</td>
-            <td>Until you delete your account</td>
-          </tr>
-          <tr>
-            <td>Analytics events</td>
-            <td>Firebase (Google servers)</td>
-            <td>Up to 14 months (Firebase default)</td>
-          </tr>
-          <tr>
-            <td>Crash reports</td>
-            <td>Firebase Crashlytics (Google servers)</td>
-            <td>90 days</td>
-          </tr>
-          <tr>
-            <td>Push notification token</td>
-            <td>Firebase Messaging (Google servers)</td>
-            <td>Until token is refreshed or you disable notifications</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <p>
-      All Firebase infrastructure is hosted on <strong>Google Cloud</strong> servers, primarily
-      in the United States, and is subject to Google's data processing agreements and standard
-      contractual clauses for international transfers.
-    </p>
+  <section id="notifications">
+    <h2><span class="n">09</span>Notifications</h2>
+    <p>If you allow notifications, Walloo uses <b>Firebase Cloud Messaging</b> to send a wallpaper of the day and occasional news about the app. This uses a device token and subscribes your phone to a general topic; it is not linked to your name or email. While the app is open, it may display these messages itself. You can turn notifications off in <b>Walloo → Settings</b> or in Android settings at any time.</p>
   </section>
 
-  <!-- ─── 7. YOUR RIGHTS ───────────────────────────────────────────────── -->
-  <section>
-    <h2><span class="num">7</span>Your Rights</h2>
+  <section id="permissions">
+    <h2><span class="n">10</span>Permissions</h2>
+    <div class="table"><table>
+      <thead><tr><th>Permission</th><th>What it is used for</th></tr></thead>
+      <tbody>
+        <tr><td><b>Internet, network state</b></td><td>Loading wallpapers, syncing, ads; checking the connection before downloading.</td></tr>
+        <tr><td><b>Set wallpaper</b></td><td>Applying wallpapers to your home and lock screen.</td></tr>
+        <tr><td><b>Notifications</b></td><td>The wallpaper of the day and app notices (you are asked first, and can refuse).</td></tr>
+        <tr><td><b>Run at startup, wake lock, foreground service</b></td><td>Keeping Auto Wallpaper and the Next widget on schedule after a restart.</td></tr>
+        <tr><td><b>Vibration</b></td><td>Light haptic feedback on taps.</td></tr>
+        <tr><td><b>Storage</b> (Android 9 and older only)</td><td>Saving downloaded wallpapers to your gallery. Newer Android versions need no permission for this.</td></tr>
+        <tr><td><b>Advertising ID</b> (free version)</td><td>Ads, as described in section 6.</td></tr>
+      </tbody>
+    </table></div>
+    <p>Walloo does <b>not</b> request location, camera, microphone, contacts, phone, SMS or access to your photos and files. The Live wallpaper motion sensor does not require a permission and is used as described in <a href="#device">section 5</a>.</p>
+  </section>
 
-    <p>Depending on your jurisdiction, you may have the following rights:</p>
+  <section id="use">
+    <h2><span class="n">11</span>How and why we use data</h2>
+    <div class="table"><table>
+      <thead><tr><th>Purpose</th><th>Data</th><th>Legal basis (EEA/UK)</th></tr></thead>
+      <tbody>
+        <tr><td>Providing the app: wallpapers, favorites, sync, Community, Auto Wallpaper, Live</td><td>Account, favorites, collections, on-device data</td><td>Performing our agreement with you</td></tr>
+        <tr><td>Unlocking and restoring Walloo Pro</td><td>Purchase status</td><td>Performing our agreement with you</td></tr>
+        <tr><td>Fixing crashes and keeping the app stable and secure</td><td>Crash reports, device information</td><td>Our legitimate interest in a working, secure app</td></tr>
+        <tr><td>Understanding usage and improving features</td><td>Analytics events</td><td>Our legitimate interest in improving Walloo</td></tr>
+        <tr><td>Showing personalised ads</td><td>Advertising ID, device and ad data</td><td>Your consent (you can withdraw it)</td></tr>
+        <tr><td>Showing non-personalised ads, measuring ads and preventing ad fraud</td><td>Device and ad data</td><td>Our legitimate interest in funding the free app</td></tr>
+        <tr><td>Sending notifications</td><td>Notification token</td><td>Your consent (Android permission)</td></tr>
+        <tr><td>Meeting legal obligations and responding to lawful requests</td><td>As required</td><td>Legal obligation</td></tr>
+      </tbody>
+    </table></div>
+    <p>We do not use your data for automated decisions that have legal or similarly significant effects on you.</p>
+  </section>
 
+  <section id="sharing">
+    <h2><span class="n">12</span>Who we share data with</h2>
+    <p>We share data only with the providers below, who process it to deliver their service to us or under their own policies as described. <b>We do not sell personal data</b> and we do not share it for anyone else's marketing.</p>
+    <div class="table"><table>
+      <thead><tr><th>Provider</th><th>Used for</th><th>Privacy policy</th></tr></thead>
+      <tbody>
+        <tr><td><b>Google</b> — Firebase (Authentication, Cloud Firestore, Analytics, Crashlytics, Cloud Messaging, Remote Config, Cloud Functions), Google Sign-In, Google Play Billing, In-App Updates and Review</td><td>Account, database, analytics, crash reports, notifications, app settings, purchases</td><td><a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a> · <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase privacy</a></td></tr>
+        <tr><td><b>Google AdMob</b></td><td>Ads (free version)</td><td><a href="https://policies.google.com/technologies/ads" rel="noopener">How Google uses data in ads</a></td></tr>
+        <tr><td><b>Meta Audience Network</b> (Meta Platforms)</td><td>Ads (free version)</td><td><a href="https://www.facebook.com/privacy/policy/" rel="noopener">facebook.com/privacy/policy</a></td></tr>
+        <tr><td><b>Unity Ads</b> (Unity Technologies)</td><td>Ads (free version)</td><td><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" rel="noopener">unity.com privacy</a></td></tr>
+        <tr><td><b>Unsplash</b></td><td>Wallpaper images</td><td><a href="https://unsplash.com/privacy" rel="noopener">unsplash.com/privacy</a></td></tr>
+        <tr><td><b>Pexels</b> (Canva)</td><td>Wallpaper images</td><td><a href="https://www.pexels.com/privacy-policy/" rel="noopener">pexels.com/privacy-policy</a></td></tr>
+        <tr><td><b>Pixabay</b> (Canva)</td><td>Wallpaper images</td><td><a href="https://pixabay.com/service/privacy/" rel="noopener">pixabay.com/service/privacy</a></td></tr>
+      </tbody>
+    </table></div>
+    <p>Information you publish in Community is visible to all Walloo users. We may also disclose information if required by law, to protect the rights and safety of users, or as part of a sale or transfer of the app, in which case this policy continues to apply.</p>
+  </section>
+
+  <section id="retention">
+    <h2><span class="n">13</span>How long data is kept</h2>
+    <div class="table"><table>
+      <thead><tr><th>Data</th><th>Kept for</th></tr></thead>
+      <tbody>
+        <tr><td>Account, synced favorites, published collections</td><td>Until you delete them or your account</td></tr>
+        <tr><td>Analytics events</td><td>Up to 14 months, then deleted automatically</td></tr>
+        <tr><td>Crash reports</td><td>About 90 days</td></tr>
+        <tr><td>Notification token</td><td>Until it is refreshed, notifications are turned off, or the app is uninstalled</td></tr>
+        <tr><td>Advertising data</td><td>As set by each ad provider's own policy</td></tr>
+        <tr><td>Everything stored on your phone</td><td>Until you clear the app's data or uninstall it</td></tr>
+      </tbody>
+    </table></div>
+    <p>Deleted data may remain for a short time in Google's encrypted backups before it is permanently overwritten.</p>
+  </section>
+
+  <section id="transfers">
+    <h2><span class="n">14</span>Where data is processed</h2>
+    <p>Our service providers operate data centres in several countries, including the United States and the European Union. Some of our server functions run in Google Cloud's Belgium region (europe-west1). When personal data from the EEA, UK or Switzerland is transferred elsewhere, it is protected by the providers' safeguards, such as the European Commission's Standard Contractual Clauses and the EU–U.S. Data Privacy Framework where applicable.</p>
+  </section>
+
+  <section id="rights">
+    <h2><span class="n">15</span>Your rights and choices</h2>
+    <p>Depending on where you live (for example under the EU/UK GDPR or California law), you have the right to:</p>
     <ul>
-      <li><strong>Right of access</strong> — request a copy of the personal data we hold about you.</li>
-      <li><strong>Right of rectification</strong> — request correction of inaccurate data.</li>
-      <li><strong>Right of erasure</strong> — request deletion of your data ("right to be forgotten").</li>
-      <li><strong>Right to restrict processing</strong> — request that we limit how we use your data.</li>
-      <li><strong>Right to data portability</strong> — receive your data in a structured, machine-readable format.</li>
-      <li><strong>Right to object</strong> — object to processing based on legitimate interests.</li>
-      <li><strong>Right to withdraw consent</strong> — revoke any consent you have given at any time (e.g., location, notifications) without affecting the lawfulness of prior processing.</li>
+      <li><b>access</b> the personal data we hold about you and get a copy of it;</li>
+      <li><b>correct</b> inaccurate data;</li>
+      <li><b>delete</b> your data;</li>
+      <li><b>restrict</b> or <b>object to</b> processing, including processing based on our legitimate interests;</li>
+      <li>receive your data in a <b>portable</b> format;</li>
+      <li><b>withdraw consent</b> at any time (ads in Settings → Ad choices; notifications in Settings), without affecting earlier processing;</li>
+      <li><b>complain</b> to your data protection authority. In Romania this is the ANSPDCP (<a href="https://www.dataprotection.ro" rel="noopener">dataprotection.ro</a>).</li>
     </ul>
-
-    <p>
-      To exercise any of these rights, contact us at the address in Section 10.
-      We will respond within <strong>30 days</strong>.
-    </p>
-
-    <div class="callout info">
-      <strong>Deleting your account</strong>
-      You can delete your Walloo account at any time from
-      <strong>Settings → Account → Delete Account</strong> within the App.
-      This will remove your authentication data from Firebase. Local data
-      (favorites, settings) is deleted when you uninstall the App or clear app data.
-    </div>
+    <p>To exercise these rights, email us at the address in <a href="#contact">section 20</a> from the email of the Google account you use in Walloo (if any). We reply within <b>30 days</b> and do not charge for reasonable requests. We will never treat you differently for exercising your rights.</p>
   </section>
 
-  <!-- ─── 8. CHILDREN ──────────────────────────────────────────────────── -->
-  <section>
-    <h2><span class="num">8</span>Children's Privacy</h2>
-
-    <p>
-      Walloo is not directed to children under the age of <strong>13</strong> (or 16 in
-      the European Union). We do not knowingly collect personal data from children. If you
-      believe a child has provided us with personal information, please contact us immediately
-      and we will delete it.
-    </p>
+  <section id="delete">
+    <h2><span class="n">16</span>Deleting your account and data</h2>
+    <h3>In the app</h3>
+    <ol class="steps">
+      <li>Open <b>Walloo → Settings</b>.</li>
+      <li>Tap your account card at the top.</li>
+      <li>Tap <b>Delete account</b> and confirm.</li>
+    </ol>
+    <p>This permanently deletes your Walloo account, your profile, your synced favorites and folders, and every collection you published. Likes you gave to other people's collections may remain as anonymous counts, no longer linked to any account.</p>
+    <h3>Without the app</h3>
+    <p>Use our <a href="https://maidene-droid.github.io/walloo-legal/delete_account.html">account deletion page</a> or email us. We delete your account and its data within 30 days.</p>
+    <h3>Data on your phone</h3>
+    <p>Everything stored only on your phone is removed when you clear Walloo's data in Android settings or uninstall the app. Analytics and crash data are not linked to your account and expire as described in <a href="#retention">section 13</a>.</p>
   </section>
 
-  <!-- ─── 9. SECURITY ──────────────────────────────────────────────────── -->
-  <section>
-    <h2><span class="num">9</span>Security</h2>
+  <section id="children">
+    <h2><span class="n">17</span>Children</h2>
+    <p>Walloo is a general-audience app and is <b>not directed to children under 13</b> (or the minimum age of digital consent in your country, such as 16 in some EU countries). We do not knowingly collect personal data from children. If you believe a child has given us personal data, contact us and we will delete it.</p>
+  </section>
 
-    <p>
-      We implement appropriate technical and organizational measures to protect your data,
-      including:
-    </p>
+  <section id="security">
+    <h2><span class="n">18</span>Security</h2>
     <ul>
-      <li>HTTPS/TLS encryption for all network requests.</li>
-      <li>Firebase security rules restricting data access.</li>
-      <li>No sensitive data stored in plaintext on device.</li>
-      <li>API keys stored securely and not exposed in client code.</li>
+      <li>All network traffic uses encrypted connections (HTTPS/TLS).</li>
+      <li>Our cloud database uses security rules: only you can read or change your own account data, and only you can edit your collections.</li>
+      <li>Your Walloo Pro status is kept in encrypted storage on your phone.</li>
+      <li>Access to our Firebase and Google Cloud project is restricted to the developer.</li>
     </ul>
-    <p>
-      No method of transmission over the Internet is 100% secure. We cannot guarantee
-      absolute security, but we take reasonable precautions to protect your information.
-    </p>
+    <p>No system is perfectly secure, but we take reasonable measures to protect your information and will inform you and the authorities of a breach where the law requires it.</p>
   </section>
 
-  <!-- ─── 10. CONTACT ──────────────────────────────────────────────────── -->
-  <section>
-    <h2><span class="num">10</span>Contact Us</h2>
+  <section id="changes">
+    <h2><span class="n">19</span>Changes to this policy</h2>
+    <p>When Walloo changes in a way that affects your data, we update this page and its effective date. For significant changes, we will also tell you in the app before they take effect. Earlier versions are available on request.</p>
+  </section>
 
-    <p>
-      If you have any questions, requests, or concerns about this Privacy Policy or
-      our data practices, please contact us:
-    </p>
-
-    <div class="contact-card">
-      <p><strong>Walloo: 4K Wallpapers</strong></p>
-      <p>Google Play package: <strong>com.walloo.wallpapper</strong></p>
+  <section id="contact">
+    <h2><span class="n">20</span>Contact</h2>
+    <div class="contact">
+      <div class="eyebrow">Privacy questions &amp; requests</div>
+      <h3>Walloo: 4K Wallpapers</h3>
+      <p>Google Play package: com.walloo.wallpapper</p>
       <p>Email: <a href="mailto:maiden.e@gmail.com">maiden.e@gmail.com</a></p>
+      <p>Account deletion: <a href="https://maidene-droid.github.io/walloo-legal/delete_account.html">delete_account.html</a></p>
     </div>
-
-    <p style="margin-top:16px;">
-      If you are located in the EEA and believe your data protection rights have been
-      violated, you have the right to lodge a complaint with your local
-      <a href="https://edpb.europa.eu/about-edpb/about-edpb/members_en" target="_blank">
-        Data Protection Authority</a>.
-    </p>
   </section>
 
-  <!-- ─── 11. CHANGES ──────────────────────────────────────────────────── -->
-  <section>
-    <h2><span class="num">11</span>Changes to This Policy</h2>
-
-    <p>
-      We may update this Privacy Policy from time to time. When we do, we will revise the
-      "Last updated" date at the top of this page. For significant changes, we will notify
-      you via a push notification or in-app notice. Your continued use of the App after
-      any changes constitutes your acceptance of the updated policy.
-    </p>
-    <p>
-      Previous versions of this Privacy Policy are available upon request.
-    </p>
-  </section>
-
-  <!-- ─── FOOTER ───────────────────────────────────────────────────────── -->
   <footer>
-    <p>© 2026 Walloo. All rights reserved.</p>
-    <p style="margin-top:6px;">This Privacy Policy was last updated on June 1, 2025.</p>
+    <svg class="logo" viewBox="0 0 512 512" aria-hidden="true">
+      <defs><clipPath id="lower2"><circle cx="256" cy="267" r="156"/></clipPath></defs>
+      <rect width="512" height="512" rx="112" fill="#15130F"/>
+      <path d="M99 249a157 157 0 0 1 314 0z" fill="#E4DDCE"/>
+      <g clip-path="url(#lower2)">
+        <rect x="80" y="266" width="352" height="35" fill="#AAA498"/>
+        <rect x="80" y="320" width="352" height="30" fill="#747067"/>
+        <rect x="80" y="369" width="352" height="26" fill="#47433D"/>
+      </g>
+    </svg>
+    <span>© 2026 Walloo</span>
+    <span>Version 2.0 · effective 29 October 2026</span>
   </footer>
 
 </div>
