@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of Service — Walloo: 4K Wallpapers</title>
+<meta name="description" content="The terms for using Walloo: 4K Wallpapers (com.walloo.wallpapper): Walloo Pro, subscriptions, refunds, Community rules and your legal rights.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='112' fill='%2315130F'/%3E%3Cpath d='M99 249a157 157 0 0 1 314 0z' fill='%23E4DDCE'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F0EEE9;
+    --card: #FAF8F4;
+    --ink: #15130F;
+    --ink-soft: #4A463F;
+    --mist: #7A756C;
+    --line: #DEDAD2;
+    --sage: #6F7C63;
+    --sage-bg: #E6E9E0;
+    --chip: #ECE8E0;
+    --shadow: 0 1px 2px rgba(21,19,15,.04), 0 8px 24px rgba(21,19,15,.05);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15130F;
+      --card: #1D1B17;
+      --ink: #F2EEE6;
+      --ink-soft: #CFC9BE;
+      --mist: #9B958A;
+      --line: #2E2B25;
+      --sage: #A7B39A;
+      --sage-bg: #232720;
+      --chip: #26231E;
+      --shadow: none;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 16px/1.65 "Geist", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  a { color: inherit; text-decoration: underline; text-decoration-color: var(--sage); text-underline-offset: 3px; }
+  a:hover { text-decoration-thickness: 2px; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 20px 80px; }
+
+  /* ── Header ─────────────────────────────────────────── */
+  header.top {
+    display: flex; align-items: center; gap: 14px;
+    padding: 28px 0 18px;
+  }
+  .logo { width: 48px; height: 48px; flex: none; border-radius: 12px; display: block; }
+  .brand { font-weight: 600; font-size: 22px; letter-spacing: -.02em; line-height: 1.1; }
+  .brand small { display: block; font: 500 12px/1.4 "Geist Mono", ui-monospace, monospace; letter-spacing: .08em; text-transform: uppercase; color: var(--mist); margin-top: 3px; }
+
+  .hero { padding: 36px 0 28px; border-top: 1px solid var(--line); }
+  .eyebrow { font: 500 12px/1 "Geist Mono", ui-monospace, monospace; letter-spacing: .14em; text-transform: uppercase; color: var(--sage); }
+  h1 { font-size: clamp(34px, 6vw, 52px); line-height: 1.05; letter-spacing: -.035em; font-weight: 600; margin: 14px 0 16px; }
+  .lede { font-size: 18px; color: var(--ink-soft); max-width: 640px; margin: 0; }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+  .chip { background: var(--chip); border-radius: 999px; padding: 6px 12px; font-size: 13px; color: var(--ink-soft); }
+
+  /* ── At a glance ────────────────────────────────────── */
+  .glance { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 8px 0 36px; }
+  .g {
+    background: var(--card); border: 1px solid var(--line); border-radius: 20px;
+    padding: 18px 18px 16px; box-shadow: var(--shadow);
+  }
+  .g b { display: block; font-weight: 600; font-size: 15.5px; margin-bottom: 4px; letter-spacing: -.01em; }
+  .g p { margin: 0; font-size: 14.5px; color: var(--ink-soft); line-height: 1.55; }
+  .g .ic { width: 28px; height: 28px; border-radius: 9px; background: var(--sage-bg); color: var(--sage); display: grid; place-items: center; margin-bottom: 12px; }
+  .g .ic svg { width: 16px; height: 16px; }
+
+  /* ── Contents ───────────────────────────────────────── */
+  nav.toc {
+    background: var(--card); border: 1px solid var(--line); border-radius: 20px;
+    padding: 20px 22px; margin-bottom: 40px;
+  }
+  nav.toc h2 { font-size: 13px; font-family: "Geist Mono", ui-monospace, monospace; letter-spacing: .12em; text-transform: uppercase; color: var(--mist); margin: 0 0 12px; font-weight: 500; }
+  nav.toc ol { margin: 0; padding: 0; list-style: none; columns: 2 260px; column-gap: 28px; counter-reset: t; }
+  nav.toc li { counter-increment: t; break-inside: avoid; padding: 4px 0; font-size: 15px; }
+  nav.toc li::before { content: counter(t, decimal-leading-zero); font: 500 12px "Geist Mono", ui-monospace, monospace; color: var(--mist); margin-right: 10px; }
+  nav.toc a { text-decoration: none; }
+  nav.toc a:hover { text-decoration: underline; }
+
+  /* ── Sections ───────────────────────────────────────── */
+  section { padding: 30px 0 6px; border-top: 1px solid var(--line); scroll-margin-top: 16px; }
+  section h2 { display: flex; align-items: baseline; gap: 12px; font-size: 26px; letter-spacing: -.025em; line-height: 1.2; margin: 0 0 14px; font-weight: 600; }
+  section h2 .n { font: 500 13px "Geist Mono", ui-monospace, monospace; color: var(--sage); letter-spacing: .06em; flex: none; }
+  h3 { font-size: 17px; margin: 24px 0 8px; letter-spacing: -.01em; font-weight: 600; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 16px; padding-left: 20px; }
+  li { margin: 5px 0; }
+  .muted { color: var(--mist); }
+  .note {
+    background: var(--sage-bg); border-radius: 16px; padding: 14px 16px; margin: 16px 0;
+    font-size: 15px; color: var(--ink-soft);
+  }
+  .note b { color: var(--ink); }
+
+  .table { width: 100%; overflow-x: auto; margin: 10px 0 18px; border: 1px solid var(--line); border-radius: 16px; background: var(--card); }
+  table { border-collapse: collapse; width: 100%; font-size: 14.5px; min-width: 560px; }
+  th, td { text-align: left; vertical-align: top; padding: 11px 14px; border-bottom: 1px solid var(--line); }
+  th { font: 500 12px "Geist Mono", ui-monospace, monospace; letter-spacing: .08em; text-transform: uppercase; color: var(--mist); background: transparent; }
+  tr:last-child td { border-bottom: 0; }
+  td b { font-weight: 600; }
+
+  .steps { counter-reset: s; list-style: none; padding: 0; }
+  .steps li { counter-increment: s; position: relative; padding-left: 38px; margin: 10px 0; }
+  .steps li::before {
+    content: counter(s); position: absolute; left: 0; top: 1px;
+    width: 26px; height: 26px; border-radius: 50%; background: var(--ink); color: var(--bg);
+    font: 600 13px/26px "Geist", sans-serif; text-align: center;
+  }
+
+  .contact {
+    background: var(--ink); color: var(--bg); border-radius: 24px; padding: 26px 24px; margin: 18px 0 8px;
+  }
+  .contact .eyebrow { color: #A7B39A; }
+  .contact h3 { color: var(--bg); font-size: 22px; margin: 10px 0 6px; }
+  .contact p { color: color-mix(in srgb, var(--bg) 78%, transparent); margin: 0 0 6px; }
+  .contact a { color: var(--bg); text-decoration-color: #A7B39A; }
+
+  footer { margin-top: 48px; padding-top: 22px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; color: var(--mist); font-size: 13.5px; }
+  footer .logo { width: 22px; height: 22px; border-radius: 6px; }
+
+  @media (max-width: 520px) {
+    .wrap { padding: 0 16px 64px; }
+    .lede { font-size: 16.5px; }
+    section h2 { font-size: 23px; }
+  }
+  @media print {
+    body { background: #fff; color: #000; }
+    .glance, nav.toc { break-inside: avoid; }
+    .contact { background: #fff; color: #000; border: 1px solid #ccc; }
+    .contact h3, .contact p, .contact a { color: #000; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <svg class="logo" viewBox="0 0 512 512" role="img" aria-label="Walloo logo">
+      <defs><clipPath id="lower"><circle cx="256" cy="267" r="156"/></clipPath></defs>
+      <rect width="512" height="512" rx="112" fill="#15130F"/>
+      <path d="M99 249a157 157 0 0 1 314 0z" fill="#E4DDCE"/>
+      <g clip-path="url(#lower)">
+        <rect x="80" y="266" width="352" height="35" fill="#AAA498"/>
+        <rect x="80" y="320" width="352" height="30" fill="#747067"/>
+        <rect x="80" y="369" width="352" height="26" fill="#47433D"/>
+      </g>
+    </svg>
+    <div class="brand">Walloo<small>4K Wallpapers</small></div>
+  </header>
+
+  <div class="hero">
+    <div class="eyebrow">Terms of Service</div>
+    <h1>Fair terms.<br>Plainly written.</h1>
+    <p class="lede">These Terms are the agreement between you and us when you use Walloo. They cover what you can do with the app and its wallpapers, how Walloo Pro works, Community rules, and the rights you keep. The cards below are a short guide. The numbered sections are what count.</p>
+    <div class="meta">
+      <span class="chip">Effective 7 November 2026</span>
+      <span class="chip">Version 1.0</span>
+      <span class="chip">Provided by Halo Apps</span>
+    </div>
+  </div>
+
+  <div class="glance" aria-label="At a glance">
+    <div class="g">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg></div>
+      <b>Free to use, with ads</b>
+      <p>You can use Walloo for free without an account. The free version shows ads. Walloo Pro removes them and adds more features.</p>
+    </div>
+    <div class="g">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg></div>
+      <b>Subscriptions renew until you cancel</b>
+      <p>Monthly and Yearly plans renew automatically. You can cancel at any time in Google Play. Lifetime is a one-time purchase.</p>
+    </div>
+    <div class="g">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/></svg></div>
+      <b>Photos belong to their creators</b>
+      <p>You may use the wallpapers on your own devices. You may not sell them or pass them off as your own.</p>
+    </div>
+    <div class="g">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+      <b>Your legal rights stay yours</b>
+      <p>Nothing in these Terms takes away the consumer rights that the law of your country gives you.</p>
+    </div>
+  </div>
+
+  <nav class="toc" aria-label="Contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#who">Who we are</a></li>
+      <li><a href="#accept">Accepting these Terms</a></li>
+      <li><a href="#eligibility">Who can use Walloo</a></li>
+      <li><a href="#licence">Your licence to use the App</a></li>
+      <li><a href="#free">The free version and ads</a></li>
+      <li><a href="#pro">Walloo Pro</a></li>
+      <li><a href="#refunds">Refunds and your right to withdraw</a></li>
+      <li><a href="#content">Wallpapers and other content</a></li>
+      <li><a href="#account">Your account</a></li>
+      <li><a href="#community">Community and your content</a></li>
+      <li><a href="#rules">Community rules</a></li>
+      <li><a href="#reports">Reporting content and moderation</a></li>
+      <li><a href="#conduct">Using Walloo fairly</a></li>
+      <li><a href="#service">Changes, availability and third parties</a></li>
+      <li><a href="#conformity">Your legal guarantee</a></li>
+      <li><a href="#liability">Liability</a></li>
+      <li><a href="#ending">Ending these Terms</a></li>
+      <li><a href="#changes">Changes to these Terms</a></li>
+      <li><a href="#law">Applicable law and disputes</a></li>
+      <li><a href="#general">General</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+
+  <section id="who">
+    <h2><span class="n">01</span>Who we are</h2>
+    <p>Walloo: 4K Wallpapers ("<b>Walloo</b>" or the "<b>App</b>") is an Android app for browsing and setting wallpapers, published on Google Play under the package name <b>com.walloo.wallpapper</b>.</p>
+    <p>Walloo is provided by <b>Benko Emil</b>, trading as <b>Halo Apps</b> ("<b>we</b>", "<b>us</b>"), Calea Ipotesti 365, 727325 Ipotesti, Suceava, Romania. You can reach us at <a href="mailto:maiden.e@gmail.com">maiden.e@gmail.com</a> or +40 740 602 288.</p>
+  </section>
+
+  <section id="accept">
+    <h2><span class="n">02</span>Accepting these Terms</h2>
+    <p>These Terms of Service ("<b>Terms</b>") are the agreement between you and us for using Walloo. By installing or using the App, you agree to them. If you do not agree, please do not use Walloo.</p>
+    <p>Our <a href="privacy_policy.html">Privacy Policy</a> explains how personal data is handled. Your use of Google Play, including purchases, is also covered by Google's own terms.</p>
+    <p>In these Terms, a "<b>consumer</b>" is a person using Walloo for purposes outside their trade, business or profession.</p>
+  </section>
+
+  <section id="eligibility">
+    <h2><span class="n">03</span>Who can use Walloo</h2>
+    <p>Walloo is a general-audience app and is not directed to children. You must be at least 13 years old, or older if your country sets a higher minimum age for using online services without a parent's consent.</p>
+    <p>If you are under the age of legal adulthood in your country, you need a parent or guardian's permission to buy Walloo Pro. They are responsible for purchases made with their Google Play account.</p>
+  </section>
+
+  <section id="licence">
+    <h2><span class="n">04</span>Your licence to use the App</h2>
+    <p>We give you a personal, non-exclusive, non-transferable and revocable licence to install and use Walloo on devices you own or control, for your personal, non-commercial use, in line with these Terms.</p>
+    <p>The App, including its code, design, name, logo, icons, Live scenes and other original material we created, belongs to us or our licensors and is protected by law. Apart from the licence above, these Terms give you no rights in it.</p>
+  </section>
+
+  <section id="free">
+    <h2><span class="n">05</span>The free version and ads</h2>
+    <p>The free version of Walloo is paid for by advertising. Ads are provided by Google AdMob and its mediation partners, as described in the <a href="privacy_policy.html#ads">Privacy Policy</a>. Some actions may ask you to watch a rewarded ad first, and some features have limits or are reserved for Walloo Pro.</p>
+    <p>Ads and the websites they lead to come from third parties. We do not endorse the products they promote and are not responsible for them.</p>
+  </section>
+
+  <section id="pro">
+    <h2><span class="n">06</span>Walloo Pro</h2>
+    <p>Walloo Pro is an optional paid upgrade. It removes ads and unlocks the features described on the purchase screen at the time you buy. Some features depend on your phone and its Android version, and the phone's battery or system settings can delay or limit them. Please try the free version first to see how Walloo works on your device.</p>
+    <p>All purchases are made through <b>Google Play</b> and charged to your Google Play payment method. We never see or store your card details. The price, currency and any taxes are shown by Google Play before you confirm, and that is the price that applies.</p>
+    <h3>Monthly and Yearly subscriptions</h3>
+    <ul>
+      <li>A subscription <b>renews automatically</b> at the end of each billing period, at the then-current price, until you cancel it.</li>
+      <li>You can <b>cancel at any time</b> in Google Play under Payments &amp; subscriptions. Cancel before the next renewal date to avoid the next charge.</li>
+      <li>After you cancel, Walloo Pro stays active until the end of the period you already paid for.</li>
+      <li><b>Uninstalling the App or deleting your Walloo account does not cancel a subscription.</b> You must cancel it in Google Play.</li>
+      <li>If the price of a subscription changes, Google Play will tell you in advance and, where required, ask for your agreement. If you do not want the new price, you can cancel before it applies.</li>
+    </ul>
+    <h3>Free trial</h3>
+    <p>The Yearly plan may include a free trial, currently 3 days, when you are eligible under Google Play's rules. The purchase screen shows whether a trial applies to you and what you will pay after it. <b>Unless you cancel in Google Play before the trial ends, the subscription starts and you are charged automatically.</b></p>
+    <h3>Lifetime</h3>
+    <p>Lifetime is a <b>one-time purchase, not a subscription</b>. It gives you Walloo Pro with no renewal, for as long as we offer and operate Walloo. "Lifetime" means the lifetime of the App, not of a person or a device. It is linked to the Google Play account used to buy it. If you reinstall the App or change phones, use Restore purchases with that same account.</p>
+    <h3>Promotions</h3>
+    <p>We may offer reduced prices for a limited time. A promotion applies only during the period shown in the App, and its discount is calculated against our regular price at that time. Promotions do not apply to purchases already made.</p>
+  </section>
+
+  <section id="refunds">
+    <h2><span class="n">07</span>Refunds and your right to withdraw</h2>
+    <p>Because Google Play processes all payments, refunds are requested through Google Play under its <a href="https://support.google.com/googleplay/answer/2479637" rel="noopener">refund policy</a>. If you need help, write to us and we will do what we reasonably can. We cannot issue refunds directly to your payment method.</p>
+    <p><b>If you are a consumer in the EU, the EEA or the UK</b>, you generally have 14 days to withdraw from a distance contract without giving a reason. That right can be lost or reduced where the law allows it, for example when you ask for digital content to be supplied immediately and confirm at checkout that you lose the right once supply begins. These Terms do not remove any withdrawal right the law gives you. To use it, send a clear statement to our email address or use Google Play's refund process.</p>
+    <p>A refund ends the Walloo Pro access it relates to.</p>
+  </section>
+
+  <section id="content">
+    <h2><span class="n">08</span>Wallpapers and other content</h2>
+    <p>The photos in Walloo come from third-party services, mainly <b>Unsplash</b>, <b>Pexels</b> and <b>Pixabay</b>. They remain the work of their photographers and are provided under those services' licences. Photographers are credited in the App where the service provides this information. Walloo is not affiliated with or endorsed by these services.</p>
+    <p>You may view, download and set wallpapers for <b>your own personal use on your own devices</b>. You may not:</p>
+    <ul>
+      <li>sell, license or redistribute them, alone or in bulk, or use them to build a competing app or collection;</li>
+      <li>claim that you created them;</li>
+      <li>use them in a way that suggests a person shown in a photo, or a brand, endorses you or something else;</li>
+      <li>use them in a way that is unlawful, defamatory or harmful.</li>
+    </ul>
+    <p>Photos may show trademarks, buildings, artwork or people for which other rights exist. Those rights are not included. If you want to use a photo for anything beyond a personal wallpaper, it is your responsibility to check the licence at its source.</p>
+    <p>Photos and categories can change or disappear without notice, because third-party services control them. We pick and rank content, but we do not guarantee that a particular photo stays available.</p>
+    <p>If you hold rights in something shown in Walloo and believe it should not be there, see <a href="#reports">section 12</a>.</p>
+  </section>
+
+  <section id="account">
+    <h2><span class="n">09</span>Your account</h2>
+    <p>You do not need an account to use Walloo. Signing in with Google is optional and is needed to sync favorites and to publish collections. You are responsible for keeping your Google account secure and for what is done through your account in Walloo.</p>
+    <p>You can delete your account at any time inside the App, under Settings, or by following the steps on our <a href="delete_account.html">account deletion page</a>. This removes your account data as described in the <a href="privacy_policy.html#delete">Privacy Policy</a>.</p>
+  </section>
+
+  <section id="community">
+    <h2><span class="n">10</span>Community and your content</h2>
+    <p>If you sign in, you can publish collections to Community. A published collection is <b>public</b>: anyone using Walloo can see its name and photos, plus your display name and profile photo as curator. Others can like and save it. Publishing is your choice, so please think before you publish.</p>
+    <p>"<b>Your Content</b>" is what you add yourself, such as collection names, folder names, and your selection and arrangement of wallpapers. You keep the rights you have in it. You give us a worldwide, non-exclusive, royalty-free licence to host, store, reproduce, display and distribute Your Content, within Walloo and as needed to run and improve Community, including featuring published collections inside the App.</p>
+    <p>This licence lasts while the content is published and ends when you unpublish or delete it, apart from a short time for removal from backups and caches. Copies that other users have already saved may show until those references update.</p>
+    <p>You confirm that you have the rights needed to publish Your Content and that it follows these Terms. You remain responsible for it. We do not check content before it is published.</p>
+  </section>
+
+  <section id="rules">
+    <h2><span class="n">11</span>Community rules</h2>
+    <p>Do not publish anything, including a collection name, display name or profile photo, that:</p>
+    <ul>
+      <li>is illegal, or promotes or facilitates illegal activity;</li>
+      <li>sexually exploits or endangers children in any way, which we report to the authorities where required;</li>
+      <li>is sexually explicit or pornographic;</li>
+      <li>is hateful, harassing, threatening or violent, or attacks people for who they are;</li>
+      <li>infringes someone's copyright, trademark, privacy or other rights;</li>
+      <li>impersonates someone, or shares another person's private information;</li>
+      <li>is spam, a scam, advertising, or misleading.</li>
+    </ul>
+  </section>
+
+  <section id="reports">
+    <h2><span class="n">12</span>Reporting content and moderation</h2>
+    <p>Our single point of contact for users and authorities, including under the EU Digital Services Act, is <a href="mailto:maiden.e@gmail.com">maiden.e@gmail.com</a>. You can write to us in English or Romanian.</p>
+    <p>To report content you believe is illegal, infringes your rights or breaks these Terms, email us with:</p>
+    <ul>
+      <li>the name of the collection and its curator, or the wallpaper, plus a screenshot if you can;</li>
+      <li>why you believe it is illegal or breaks these Terms, and for a rights claim, what your right is;</li>
+      <li>your name and email address, unless the report concerns child sexual abuse material;</li>
+      <li>a statement that you believe in good faith that the report is accurate and complete.</li>
+    </ul>
+    <p>We confirm receipt, review each report carefully, objectively and without undue delay, and tell you what we decided and how you can challenge it. Reports are reviewed by a person. We do not use automated systems to take moderation decisions.</p>
+    <p>If content or an account breaks these Terms or the law, we may remove or hide the content, unpublish a collection, or restrict or end access to Community or the App. We act in proportion to the seriousness of the breach and take account of the rights of everyone involved, including freedom of expression. We may suspend people who repeatedly publish illegal content or repeatedly send clearly unfounded reports.</p>
+    <p>If we restrict your content or account, we will tell you why, unless the law stops us, and how to challenge the decision. You can ask us to review it by replying to us at the same address. You may also go to court or use any other remedy available to you.</p>
+  </section>
+
+  <section id="conduct">
+    <h2><span class="n">13</span>Using Walloo fairly</h2>
+    <p>You agree not to:</p>
+    <ul>
+      <li>copy, modify, decompile or reverse engineer the App, except where the law allows it;</li>
+      <li>bypass ads, payments, limits or security, or use modified versions of the App;</li>
+      <li>scrape or bulk-download content, or access our services by automated means;</li>
+      <li>interfere with, overload or attack the App or the services it relies on;</li>
+      <li>use Walloo to break the law or the rights of others.</li>
+    </ul>
+  </section>
+
+  <section id="service">
+    <h2><span class="n">14</span>Changes, availability and third parties</h2>
+    <p>We work to keep Walloo running well and to improve it. We may update, change or remove features for good reasons, such as security, legal requirements, changes at third-party services, or improvements. We cannot promise that Walloo will always be available or free of interruptions. It needs an internet connection for most features.</p>
+    <p>Where a change has more than a minor negative effect on something you paid for, we will tell you in advance on a durable medium where the law requires it. You will then have the rights the law gives you, which can include ending the contract free of charge.</p>
+    <p>If we ever stop offering Walloo, we will give reasonable notice where we can. Where the law gives you a remedy for a subscription period you paid for or for a Lifetime purchase, that remedy remains available.</p>
+    <p>Walloo relies on third-party services, such as Google, Firebase and the photo services. They have their own terms, and we are not responsible for their services.</p>
+  </section>
+
+  <section id="conformity">
+    <h2><span class="n">15</span>Your legal guarantee</h2>
+    <p>If you are a consumer, you have legal rights when digital content or a digital service does not conform to the contract. In the EU these rights come from Directive (EU) 2019/770, and in Romania from Government Emergency Ordinance 141/2021. Depending on the case, you can ask us to bring the App into conformity and, where the law allows it, ask for a price reduction or end the contract and get a refund. To use these rights, please contact us.</p>
+    <p>We provide security and functional updates needed to keep the App in conformity, for the time the law requires. To keep it working, you need to install them.</p>
+  </section>
+
+  <section id="liability">
+    <h2><span class="n">16</span>Liability</h2>
+    <p><b>Nothing in these Terms limits or excludes</b> our liability for intent or gross negligence, for death or personal injury caused by us, or any other liability that the law does not let us limit. Nothing here affects your mandatory rights as a consumer.</p>
+    <p>Subject to that, and as far as the law allows:</p>
+    <ul>
+      <li>apart from your legal rights and what these Terms promise, we give no other guarantees about the App;</li>
+      <li>we are not responsible for loss that was not reasonably foreseeable when you started using Walloo, or for loss caused by your device, your internet connection, third-party services, or your breach of these Terms;</li>
+      <li>if you use Walloo for business purposes, which these Terms do not permit, we are not liable to you for loss of profit or business, and our total liability is limited to the amount you paid us in the 12 months before the claim.</li>
+    </ul>
+    <p>We are not responsible for delays or failures caused by events beyond our reasonable control.</p>
+  </section>
+
+  <section id="ending">
+    <h2><span class="n">17</span>Ending these Terms</h2>
+    <p>You can stop using Walloo at any time by uninstalling it. Remember to cancel any subscription in Google Play, and delete your account if you want your account data removed.</p>
+    <p>We may suspend or end your access if you seriously or repeatedly break these Terms, if the law requires it, or to protect users or the service. We will tell you the reason as described in <a href="#reports">section 12</a>. Where we end access without you being at fault, you keep any right to a refund that the law gives you.</p>
+    <p>Sections that by their nature should continue, such as those on content rights, liability and disputes, continue after these Terms end.</p>
+  </section>
+
+  <section id="changes">
+    <h2><span class="n">18</span>Changes to these Terms</h2>
+    <p>We may update these Terms for good reasons, such as a change in the law, in the App or in how we run it. We publish the new version here with a new effective date. For a change that materially affects you, we will tell you in the App or by another suitable way at least <b>30 days</b> before it applies, unless the law or an urgent security need requires a shorter time.</p>
+    <p>If you do not agree with a change, you can stop using Walloo and cancel any subscription before the change applies. Changes do not apply to disputes that started earlier.</p>
+  </section>
+
+  <section id="law">
+    <h2><span class="n">19</span>Applicable law and disputes</h2>
+    <p>Please contact us first. Most problems can be solved quickly by email.</p>
+    <p>These Terms are governed by <b>Romanian law</b>. If you are a consumer, this does not take away the protection of the mandatory rules of the country where you live. You can bring a claim in the courts of Romania or in the courts of the country where you live, as the law allows. Other than that, the courts of Romania have jurisdiction.</p>
+    <p>Consumers can also complain to the Romanian consumer authority, <a href="https://anpc.ro" rel="noopener">ANPC</a>, or to the consumer authority in their own country. We are not obliged to take part in an alternative dispute resolution procedure, and have not committed to one, but we will consider any proposal in good faith.</p>
+  </section>
+
+  <section id="general">
+    <h2><span class="n">20</span>General</h2>
+    <ul>
+      <li>These Terms and the documents they mention are the whole agreement between you and us about Walloo.</li>
+      <li>If part of these Terms is found invalid, the rest stays in force.</li>
+      <li>If we do not enforce a right straight away, we have not given it up.</li>
+      <li>You may not transfer your rights under these Terms to someone else without our agreement.</li>
+      <li>We may transfer these Terms to a company we control or to anyone who takes over Walloo, including a company set up to run it. This does not reduce your rights, and we will tell you about it.</li>
+      <li>Google is not a party to these Terms and is not responsible for the App or its support.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2><span class="n">21</span>Contact</h2>
+    <div class="contact">
+      <div class="eyebrow">Provider details</div>
+      <h3>Halo Apps</h3>
+      <p>Benko Emil, trading as Halo Apps</p>
+      <p>Calea Ipotesti 365, 727325 Ipotesti, Suceava, Romania</p>
+      <p>Email: <a href="mailto:maiden.e@gmail.com">maiden.e@gmail.com</a></p>
+      <p>Phone: <a href="tel:+40740602288">+40 740 602 288</a></p>
+      <p>App: Walloo: 4K Wallpapers (com.walloo.wallpapper)</p>
+      <p>Privacy Policy: <a href="privacy_policy.html">privacy_policy.html</a></p>
+      <p>Account deletion: <a href="delete_account.html">delete_account.html</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <svg class="logo" viewBox="0 0 512 512" aria-hidden="true">
+      <defs><clipPath id="lower2"><circle cx="256" cy="267" r="156"/></clipPath></defs>
+      <rect width="512" height="512" rx="112" fill="#15130F"/>
+      <path d="M99 249a157 157 0 0 1 314 0z" fill="#E4DDCE"/>
+      <g clip-path="url(#lower2)">
+        <rect x="80" y="266" width="352" height="35" fill="#AAA498"/>
+        <rect x="80" y="320" width="352" height="30" fill="#747067"/>
+        <rect x="80" y="369" width="352" height="26" fill="#47433D"/>
+      </g>
+    </svg>
+    <span>© 2026 Halo Apps · Walloo</span>
+    <span>Version 1.0 · effective 7 November 2026</span>
+  </footer>
+
+</div>
+</body>
+</html>
