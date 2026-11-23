@@ -163,16 +163,17 @@
     <h1>Your wallpapers.<br>Your data. Plainly explained.</h1>
     <p class="lede">This policy explains exactly what the Walloo app collects, why, who it is shared with, how long it is kept, and how you can control or delete it. No legalese where plain words will do.</p>
     <div class="meta">
-      <span class="chip">Effective 16 November 2026</span>
-      <span class="chip">Version 2.1.1</span>
+      <span class="chip">Effective 23 November 2026</span>
+      <span class="chip">Version 2.2</span>
+      <span class="chip">Applies to app version 4.5.0 and later</span>
     </div>
   </div>
 
   <div class="glance" aria-label="At a glance">
     <div class="g">
       <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></div>
-      <b>No account needed</b>
-      <p>You can use Walloo without signing in. Signing in with Google is optional and only syncs your favorites and lets you publish collections.</p>
+      <b>No sign-in needed</b>
+      <p>You can use Walloo without signing in. Signing in with Google is optional and only syncs your favorites and folders between your phones.</p>
     </div>
     <div class="g">
       <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
@@ -186,8 +187,8 @@
     </div>
     <div class="g">
       <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-      <b>No GPS, camera, contacts or photos</b>
-      <p>Walloo never asks for your location, camera, microphone or contacts, and it never reads the photos on your phone. Only an approximate area (country or city), estimated from your IP address, is seen by Firebase and ad partners.</p>
+      <b>No GPS, camera or contacts</b>
+      <p>Walloo never asks for your location, camera, microphone or contacts, and it never browses the photos on your phone: it only sees a photo you pick yourself, and keeps it on your phone. Live Weather uses a city you pick by hand. Only an approximate area (country or city), estimated from your IP address, is seen by Firebase and ad partners.</p>
     </div>
     <div class="g">
       <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14"/></svg></div>
@@ -206,12 +207,13 @@
     <ol>
       <li><a href="#who">Who we are</a></li>
       <li><a href="#summary">What we collect — summary</a></li>
-      <li><a href="#account">Google sign-in, sync and Community</a></li>
+      <li><a href="#account">Google sign-in and sync</a></li>
       <li><a href="#auto">Data collected automatically</a></li>
       <li><a href="#device">What stays on your device</a></li>
       <li><a href="#ads">Advertising</a></li>
       <li><a href="#purchases">Purchases and Walloo Pro</a></li>
       <li><a href="#images">Wallpaper images and their sources</a></li>
+      <li><a href="#weather">Live Weather</a></li>
       <li><a href="#notifications">Notifications</a></li>
       <li><a href="#permissions">Permissions</a></li>
       <li><a href="#use">How and why we use data</a></li>
@@ -229,8 +231,8 @@
 
   <section id="who">
     <h2><span class="n">01</span>Who we are</h2>
-    <p>Walloo: 4K Wallpapers ("Walloo", "we", "us") is an Android app for browsing and setting wallpapers, published on Google Play under the package name <b>com.walloo.wallpapper</b>. The developer of Walloo is the data controller responsible for the personal data described here.</p>
-    <p>This policy covers the Walloo app and the Walloo web pages that link to it. Third-party services used by the app (for example Google, Meta, Unity and Liftoff) also have their own privacy policies, linked in <a href="#sharing">section 12</a>.</p>
+    <p>Walloo: 4K Wallpapers ("Walloo", "we", "us") is an Android app for browsing and setting wallpapers, published on Google Play under the package name <b>com.walloo.wallpapper</b>. Walloo is provided by <b>Benko Emil</b>, trading as <b>Halo Apps</b>, Calea Ipotesti 365, 727325 Ipotesti, Suceava, Romania, who is the data controller responsible for the personal data described here.</p>
+    <p>This policy covers the Walloo app and the Walloo web pages that link to it. Third-party services used by the app (for example Google, Meta and Unity) also have their own privacy policies, linked in <a href="#sharing">section 13</a>.</p>
   </section>
 
   <section id="summary">
@@ -238,35 +240,36 @@
     <div class="table"><table>
       <thead><tr><th>Data</th><th>When</th><th>Why</th><th>Leaves your phone?</th></tr></thead>
       <tbody>
-        <tr><td><b>Google account</b>: name, email, profile photo, account ID</td><td>Only if you sign in</td><td>Your account, favorites sync, Community</td><td>Yes — Firebase (Google)</td></tr>
+        <tr><td><b>Google account</b>: name, email, profile photo, account ID</td><td>Only if you sign in</td><td>Your account and favorites sync</td><td>Yes — Firebase (Google)</td></tr>
         <tr><td><b>Favorites and folders</b></td><td>Always on your phone; in the cloud only if you sign in</td><td>Keep and sync your favorites</td><td>Only when signed in</td></tr>
-        <tr><td><b>Published collections</b>: name, photos, your display name and profile photo</td><td>Only if you publish a collection</td><td>Show it in Community</td><td>Yes — and visible to everyone</td></tr>
         <tr><td><b>App usage events</b>, device and app information</td><td>Automatically</td><td>Understand and improve the app</td><td>Yes — Firebase Analytics</td></tr>
         <tr><td><b>Crash reports</b></td><td>When the app crashes or hits an error</td><td>Find and fix bugs</td><td>Yes — Firebase Crashlytics</td></tr>
         <tr><td><b>Advertising ID</b>, IP address, approximate location estimated from it, device information</td><td>Free version only</td><td>Show and measure ads, prevent fraud</td><td>Yes — AdMob and ad partners</td></tr>
         <tr><td><b>Purchase status</b></td><td>When you buy or restore Walloo Pro</td><td>Unlock Pro</td><td>Handled by Google Play</td></tr>
+        <tr><td><b>Live Weather</b>: the city you choose, its search text, an anonymous weather identifier</td><td>Only if you turn on Live Weather with <i>My city's weather</i> (Walloo Pro); not in <i>I choose</i></td><td>Show the forecast for your city on your Live wallpaper</td><td>Yes — our server (Google Cloud); never your GPS location</td></tr>
         <tr><td><b>Notification token</b></td><td>If notifications are on</td><td>Send the wallpaper-of-the-day and updates</td><td>Yes — Firebase Cloud Messaging</td></tr>
+        <tr><td><b>Photos you pick from your gallery</b> (Your photos, a photo for Live Weather)</td><td>Only when you pick one</td><td>Use it as a wallpaper</td><td>No — a copy stays on your phone</td></tr>
         <tr><td><b>Settings, history, interest in categories, Auto Wallpaper queue, Live settings</b></td><td>As you use the app</td><td>Make the app work and feel personal</td><td>No — stays on your phone</td></tr>
       </tbody>
     </table></div>
-    <div class="note"><b>We do not collect:</b> your precise (GPS) location, contacts, messages, call logs, microphone or camera input, the photos or files on your phone, your browsing history outside the app, or any biometric or health data. Your <b>approximate</b> location (country or city level) can be estimated from your IP address by Firebase Analytics and by ad partners, as described in sections 4 and 6.</div>
+    <div class="note"><b>We do not collect:</b> your precise (GPS) location, contacts, messages, call logs, microphone or camera input, the photos or files on your phone (a photo you pick yourself stays on your phone — see section 5), your browsing history outside the app, or any biometric or health data. Your <b>approximate</b> location (country or city level) can be estimated from your IP address by Firebase Analytics and by ad partners, as described in sections 4 and 6.</div>
   </section>
 
   <section id="account">
-    <h2><span class="n">03</span>Google sign-in, sync and Community</h2>
+    <h2><span class="n">03</span>Google sign-in and sync</h2>
     <h3>Signing in (optional)</h3>
     <p>You can sign in with your Google account through Firebase Authentication. We then receive your <b>name, email address, profile photo link and a Google account identifier</b>. We never see your Google password.</p>
     <h3>Favorites sync</h3>
     <p>When you are signed in, your favorite wallpapers and folders are saved in our cloud database (Google Cloud Firestore) so they are available after reinstalling or on another phone. What is saved is the list of wallpapers (their links, sizes and credits) and your folder names — not files from your phone.</p>
-    <h3>Community collections</h3>
-    <p>If you publish a collection, it becomes <b>public</b>: anyone using Walloo can see the collection name, the wallpapers in it, and your <b>display name and profile photo</b> as its curator. Others can like and save it. You can unpublish or delete your collections at any time, and they are deleted with your account.</p>
+    <h3>Community collections (discontinued)</h3>
+    <p>Earlier versions of Walloo let signed-in users publish collections to a public Community. Publishing is no longer available. Collections published with those versions, together with the display name and profile photo shown as their curator, are kept until you delete your account, which deletes them (see <a href="#delete">section 17</a>), or until you ask us by email to delete them.</p>
     <p class="muted">If you never sign in, none of the above applies: nothing is linked to an account and your favorites stay only on your phone.</p>
   </section>
 
   <section id="auto">
     <h2><span class="n">04</span>Data collected automatically</h2>
     <h3>Firebase Analytics (Google)</h3>
-    <p>We record how the app is used, for example which screens are opened, which categories are browsed, when a wallpaper is set or downloaded, when a paywall or an ad is shown, and when the app crashes. Each event comes with an app-instance identifier, the device model, Android version, app version, language, approximate country (derived from the IP address) and session information. We also tag which version of an experiment you see (for example, which tab layout). We use this only in aggregate to improve Walloo. We do <b>not</b> link analytics to your name or email.</p>
+    <p>We record how the app is used, for example which screens are opened, which categories are browsed, when a wallpaper is set or downloaded, when a paywall or an ad is shown, and when the app crashes. Each event comes with an app-instance identifier, the device model, Android version, app version, language, approximate country (derived from the IP address) and session information. We also tag which version of an experiment you see (for example, which tab layout) and whether you have Walloo Pro (yes or no, never payment details). We use this only in aggregate to improve Walloo. We do <b>not</b> link analytics to your name or email.</p>
     <h3>Firebase Crashlytics (Google)</h3>
     <p>If the app crashes or hits an error, a crash report is sent with the technical details: the error and stack trace, the device model, Android version, app version, memory and disk state, and an installation identifier. Crash reports do not contain your name or email.</p>
     <h3>Firebase Remote Config and Installations (Google)</h3>
@@ -277,13 +280,16 @@
 
   <section id="device">
     <h2><span class="n">05</span>What stays on your device</h2>
-    <p>The following is stored only on your phone and is <b>never sent to us</b>. It is erased when you clear the app's data or uninstall it.</p>
+    <p>The following is kept on your phone and, except where noted below, is <b>never sent to us</b>. It is erased when you clear the app's data or uninstall it.</p>
     <ul>
       <li>Your settings, favorites (when not signed in), recently viewed wallpapers and download history.</li>
       <li>A simple score of which categories you like, used to personalise your feed. It is calculated and kept on your phone only.</li>
       <li>Your Auto Wallpaper schedule and queue, and a local library of wallpapers prepared for your feed.</li>
       <li>Your Live wallpaper settings. <b>Live wallpapers react to how you tilt your phone using the motion sensor. Sensor readings are used instantly to move the image and are never stored or sent anywhere.</b></li>
+      <li>For the wallpaper editor: your edits (looks, adjustments, Focus), kept per photo. <b>Focus</b> finds the subject of a wallpaper with <b>Google ML Kit on your phone</b>: the photo is never uploaded for this. ML Kit runs through Google Play services, which may send Google technical information about its use (performance and diagnostic metrics, device information and identifiers) — never the photo.</li>
+      <li>For Live Weather: a local copy of the city you chose and its name in your language (the city itself is also sent to our weather server — see <a href="#weather">Live Weather</a>), and the forecast plan your Live wallpaper uses to draw rain and light. The sunrise and sunset for your city are calculated on your phone.</li>
       <li>Your Walloo Pro status, kept in encrypted storage.</li>
+      <li><b>Your photos</b>: photos you pick from your gallery with Android's photo picker (in Your photos, or as the picture for Live Weather). Walloo receives only the photos you pick, makes its own copy inside the app and uses it as a wallpaper, in Auto Wallpaper or in the editor. These copies are <b>never uploaded or synced</b>, are not included in Android backups, and are deleted when you remove them in Walloo, clear the app's data or uninstall. The original in your gallery is not changed.</li>
       <li>Cached images, so wallpapers load faster and use less data.</li>
     </ul>
     <p>Wallpapers you download are saved to your phone's Pictures folder. Wallpapers you set are applied by Android on your device.</p>
@@ -295,7 +301,7 @@
     <h3>Who serves the ads</h3>
     <ul>
       <li><b>Google AdMob</b> (Google LLC), which runs the ad auction.</li>
-      <li>Ad networks that compete in AdMob's auction (mediation): <b>Meta Audience Network</b> (Meta Platforms), <b>Unity Ads</b> (Unity Technologies) and <b>Liftoff Monetize</b> (Liftoff Mobile).</li>
+      <li>Ad networks that compete in AdMob's auction (mediation): <b>Meta Audience Network</b> (Meta Platforms), <b>Unity Ads</b> (Unity Technologies), <b>Liftoff Monetize</b> (Liftoff Mobile) and <b>InMobi</b> (InMobi Pte. Ltd.).</li>
       <li>Other advertising partners that Google AdMob works with. The current list is shown in the consent message and on <a href="https://support.google.com/admob/answer/9012903" rel="noopener">Google's ad technology providers page</a>.</li>
     </ul>
     <h3>What they collect</h3>
@@ -306,7 +312,7 @@
       <li><b>Advertising ID:</b> you can reset or delete it in <b>Android Settings → Privacy → Ads</b> (the exact path varies by phone).</li>
       <li><b>No ads at all:</b> Walloo Pro removes all ads.</li>
     </ul>
-    <p>Our ad requests are <b>not</b> marked as directed to children; see <a href="#children">section 17</a>.</p>
+    <p>Our ad requests are <b>not</b> marked as directed to children; see <a href="#children">section 18</a>.</p>
   </section>
 
   <section id="purchases">
@@ -326,13 +332,32 @@
     <p>When you share a wallpaper, Android's share menu opens with a link to the photo's source page; the app you choose then handles it.</p>
   </section>
 
+  <section id="weather">
+    <h2><span class="n">09</span>Live Weather</h2>
+    <p>Live Weather is an optional Walloo Pro feature with two modes, and it is off until you choose one. You can turn it off at any time on the Live Weather screen (<b>Turn weather off</b>).</p>
+    <ul>
+      <li><b>My city's weather</b>: your Live wallpaper shows rain, snow, fog or storms when the forecast for your city says so, and its light follows your city's sunrise and sunset. This mode sends the city you choose to our weather server and uses it, as described below.</li>
+      <li><b>I choose</b>: you pick the weather yourself (for example rain). It works on your phone: no city is chosen, nothing is searched, no forecast is read and nothing is sent to our weather server. While it is on, your phone may still check Remote Config (Firebase) about once an hour to learn whether we have switched the feature off for everyone — like the rest of the app's settings, this sends no city and no weather data.</li>
+    </ul>
+    <h3>Your city, never your location</h3>
+    <p>You pick your city by typing its name; Walloo does <b>not</b> use GPS, the location permission or your phone's location. The text you type and your app language are sent to our server to find matching cities. When you choose one, our server registers that city (its coordinates rounded to about 1 km, its name and time zone) so it can keep a forecast for it. A city record is shared by everyone who chose the same city and is not linked to you. The city you choose is still treated as personal data: on your phone it stays with your settings, and it reaches our server only together with the anonymous identifier described below, never with your name, email or Google account.</p>
+    <h3>An anonymous weather identifier</h3>
+    <p>To protect our server from abuse, the weather feature signs in with an <b>anonymous</b> Firebase account that is separate from your Google sign-in. It has no name, email or Google account attached. With it, our server counts how many searches and city choices a phone makes per day (to stop abuse) and the app says “still in use” about twice a day so the forecast for your city keeps updating. Google's App Check (Play Integrity) is also used to confirm requests come from the genuine Walloo app.</p>
+    <h3>Server logs</h3>
+    <p>Like any web service, our server (Google Cloud Functions, Belgium region) keeps short technical request logs: the time, the function called, whether it succeeded, and network details such as your IP address and app version. They are used only to run, debug and protect the service, are not linked to your Google account, and are deleted automatically after about 30 days. We do not log the text you search or the city you choose.</p>
+    <h3>Forecast and place data</h3>
+    <p>Forecasts come from <b>MET Norway</b> (the Norwegian Meteorological Institute). <b>Our server</b> asks MET Norway for the forecast of a city's rounded coordinates; your phone never contacts MET Norway, and no data about you is sent to them. City names come from <b>GeoNames</b>, stored on our server; nothing is sent to GeoNames. Both are credited in the app (CC BY 4.0).</p>
+    <h3>In the background</h3>
+    <p>In <b>My city's weather</b>, while Walloo Live is your wallpaper, your phone checks your city's forecast about once an hour, only with a network connection, and stops when you turn the feature off, change wallpaper, lose Walloo Pro, or when we switch the feature off remotely. In <b>I choose</b>, no forecast is checked; only the hourly Remote Config check above runs, and it stops in the same cases.</p>
+  </section>
+
   <section id="notifications">
-    <h2><span class="n">09</span>Notifications</h2>
+    <h2><span class="n">10</span>Notifications</h2>
     <p>If you allow notifications, Walloo uses <b>Firebase Cloud Messaging</b> to send a wallpaper of the day and occasional news about the app. This uses a device token and subscribes your phone to a general topic; it is not linked to your name or email. While the app is open, it may display these messages itself. You can turn notifications off in <b>Walloo → Settings</b> or in Android settings at any time.</p>
   </section>
 
   <section id="permissions">
-    <h2><span class="n">10</span>Permissions</h2>
+    <h2><span class="n">11</span>Permissions</h2>
     <div class="table"><table>
       <thead><tr><th>Permission</th><th>What it is used for</th></tr></thead>
       <tbody>
@@ -345,15 +370,17 @@
         <tr><td><b>Advertising ID</b> (free version)</td><td>Ads, as described in section 6.</td></tr>
       </tbody>
     </table></div>
-    <p>Walloo does <b>not</b> request the location permission, camera, microphone, contacts, phone, SMS or access to your photos and files. The Live wallpaper motion sensor does not require a permission and is used as described in <a href="#device">section 5</a>.</p>
+    <p>Walloo does <b>not</b> request the location permission, camera, microphone, contacts, phone, SMS or access to your photos and files. Photos you pick yourself come through Android's photo picker, which needs no permission and gives Walloo only the photos you select. The Live wallpaper motion sensor does not require a permission and is used as described in <a href="#device">section 5</a>.</p>
   </section>
 
   <section id="use">
-    <h2><span class="n">11</span>How and why we use data</h2>
+    <h2><span class="n">12</span>How and why we use data</h2>
     <div class="table"><table>
       <thead><tr><th>Purpose</th><th>Data</th><th>Legal basis (EEA/UK)</th></tr></thead>
       <tbody>
-        <tr><td>Providing the app: wallpapers, favorites, sync, Community, Auto Wallpaper, Live</td><td>Account, favorites, collections, on-device data</td><td>Performing our agreement with you</td></tr>
+        <tr><td>Providing the app: wallpapers, favorites, sync, Auto Wallpaper, Live, Your photos</td><td>Account, favorites, on-device data</td><td>Performing our agreement with you</td></tr>
+        <tr><td>Live Weather: finding your city and keeping its forecast up to date</td><td>City search text, chosen city, anonymous weather identifier</td><td>Performing our agreement with you (a feature you turn on)</td></tr>
+        <tr><td>Protecting the weather service from abuse (daily limits, App Check)</td><td>Anonymous weather identifier, daily request counts, app integrity check</td><td>Our legitimate interest in a secure, available service</td></tr>
         <tr><td>Unlocking and restoring Walloo Pro</td><td>Purchase status</td><td>Performing our agreement with you</td></tr>
         <tr><td>Fixing crashes and keeping the app stable and secure</td><td>Crash reports, device information</td><td>Our legitimate interest in a working, secure app</td></tr>
         <tr><td>Understanding usage and improving features</td><td>Analytics events</td><td>Our legitimate interest in improving Walloo</td></tr>
@@ -367,33 +394,39 @@
   </section>
 
   <section id="sharing">
-    <h2><span class="n">12</span>Who we share data with</h2>
+    <h2><span class="n">13</span>Who we share data with</h2>
     <p>We share data only with the providers below, who process it to deliver their service to us or under their own policies as described. <b>We do not sell personal data</b> and we do not share it for anyone else's marketing.</p>
     <div class="table"><table>
       <thead><tr><th>Provider</th><th>Used for</th><th>Privacy policy</th></tr></thead>
       <tbody>
-        <tr><td><b>Google</b> — Firebase (Authentication, Cloud Firestore, Analytics, Crashlytics, Cloud Messaging, Remote Config, Cloud Functions), Google Sign-In, Google Play Billing, In-App Updates and Review</td><td>Account, database, analytics, crash reports, notifications, app settings, purchases</td><td><a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a> · <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase privacy</a></td></tr>
+        <tr><td><b>Google</b> — Firebase (Authentication, Cloud Firestore, Analytics, Crashlytics, Cloud Messaging, Remote Config, Cloud Functions, App Check), Google Play Integrity, Google Sign-In, Google Play Billing, In-App Updates and Review, ML Kit (on-device subject detection for the editor's Focus)</td><td>Account, database, analytics, crash reports, notifications, app settings, purchases, Live Weather server and abuse protection; ML Kit usage and diagnostic metrics (never your photos)</td><td><a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a> · <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase privacy</a></td></tr>
         <tr><td><b>Google AdMob</b></td><td>Ads (free version)</td><td><a href="https://policies.google.com/technologies/ads" rel="noopener">How Google uses data in ads</a></td></tr>
         <tr><td><b>Meta Audience Network</b> (Meta Platforms)</td><td>Ads (free version)</td><td><a href="https://www.facebook.com/privacy/policy/" rel="noopener">facebook.com/privacy/policy</a></td></tr>
         <tr><td><b>Unity Ads</b> (Unity Technologies)</td><td>Ads (free version)</td><td><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" rel="noopener">unity.com privacy</a></td></tr>
         <tr><td><b>Liftoff Monetize</b> (Liftoff Mobile, formerly Vungle)</td><td>Ads (free version)</td><td><a href="https://liftoff.io/privacy-policy/" rel="noopener">liftoff.io/privacy-policy</a></td></tr>
+        <tr><td><b>InMobi</b> (InMobi Pte. Ltd.)</td><td>Ads (free version)</td><td><a href="https://www.inmobi.com/privacy-policy" rel="noopener">inmobi.com/privacy-policy</a></td></tr>
         <tr><td><b>Unsplash</b></td><td>Wallpaper images</td><td><a href="https://unsplash.com/privacy" rel="noopener">unsplash.com/privacy</a></td></tr>
         <tr><td><b>Pexels</b> (Canva)</td><td>Wallpaper images</td><td><a href="https://www.pexels.com/privacy-policy/" rel="noopener">pexels.com/privacy-policy</a></td></tr>
         <tr><td><b>Pixabay</b> (Canva)</td><td>Wallpaper images</td><td><a href="https://pixabay.com/service/privacy/" rel="noopener">pixabay.com/service/privacy</a></td></tr>
       </tbody>
     </table></div>
-    <p>Information you publish in Community is visible to all Walloo users. We may also disclose information if required by law, to protect the rights and safety of users, or as part of a sale or transfer of the app, in which case this policy continues to apply.</p>
+    <p><b>MET Norway</b> (weather forecasts, <a href="https://www.met.no/en" rel="noopener">met.no</a>) and <b>GeoNames</b> (city names, <a href="https://www.geonames.org/" rel="noopener">geonames.org</a>) are data sources, not data recipients: our server downloads from them, and no data about you is sent to them.</p>
+    <p>Collections published in Community with earlier versions of the app stay visible to Walloo users until they are deleted (section 3). We may also disclose information if required by law, to protect the rights and safety of users, or as part of a sale or transfer of the app, in which case this policy continues to apply.</p>
   </section>
 
   <section id="retention">
-    <h2><span class="n">13</span>How long data is kept</h2>
+    <h2><span class="n">14</span>How long data is kept</h2>
     <div class="table"><table>
       <thead><tr><th>Data</th><th>Kept for</th></tr></thead>
       <tbody>
-        <tr><td>Account, synced favorites, published collections</td><td>Until you delete them or your account</td></tr>
+        <tr><td>Account, synced favorites, collections published with earlier versions</td><td>Until you delete them or your account</td></tr>
         <tr><td>Analytics events</td><td>Up to 14 months, then deleted automatically</td></tr>
         <tr><td>Crash reports</td><td>About 90 days</td></tr>
         <tr><td>Notification token</td><td>Until it is refreshed, notifications are turned off, or the app is uninstalled</td></tr>
+        <tr><td>Live Weather anonymous identifier</td><td>Deleted automatically after 30 days without use; a new one is created if you keep using Live Weather</td></tr>
+        <tr><td>Live Weather daily request counts</td><td>Deleted automatically within about 2 days</td></tr>
+        <tr><td>Live Weather server request logs (IP address, time, function, app version)</td><td>About 30 days, then deleted automatically</td></tr>
+        <tr><td>Live Weather city records and forecasts (not linked to you)</td><td>Refreshed while someone uses the city; kept as anonymous, shared records otherwise</td></tr>
         <tr><td>Advertising data</td><td>As set by each ad provider's own policy</td></tr>
         <tr><td>Everything stored on your phone</td><td>Until you clear the app's data or uninstall it</td></tr>
       </tbody>
@@ -402,12 +435,12 @@
   </section>
 
   <section id="transfers">
-    <h2><span class="n">14</span>Where data is processed</h2>
+    <h2><span class="n">15</span>Where data is processed</h2>
     <p>Our service providers operate data centres in several countries, including the United States and the European Union. Some of our server functions run in Google Cloud's Belgium region (europe-west1). When personal data from the EEA, UK or Switzerland is transferred elsewhere, it is protected by the providers' safeguards, such as the European Commission's Standard Contractual Clauses and the EU–U.S. Data Privacy Framework where applicable.</p>
   </section>
 
   <section id="rights">
-    <h2><span class="n">15</span>Your rights and choices</h2>
+    <h2><span class="n">16</span>Your rights and choices</h2>
     <p>Depending on where you live (for example under the EU/UK GDPR or California law), you have the right to:</p>
     <ul>
       <li><b>access</b> the personal data we hold about you and get a copy of it;</li>
@@ -418,50 +451,54 @@
       <li><b>withdraw consent</b> at any time (ads in Settings → Ad choices; notifications in Settings), without affecting earlier processing;</li>
       <li><b>complain</b> to your data protection authority. In Romania this is the ANSPDCP (<a href="https://www.dataprotection.ro" rel="noopener">dataprotection.ro</a>).</li>
     </ul>
-    <p>To exercise these rights, email us at the address in <a href="#contact">section 20</a> from the email of the Google account you use in Walloo (if any). We reply within <b>30 days</b> and do not charge for reasonable requests. We will never treat you differently for exercising your rights.</p>
+    <p>To exercise these rights, email us at the address in <a href="#contact">section 21</a> from the email of the Google account you use in Walloo (if any). We reply within <b>30 days</b> and do not charge for reasonable requests. We will never treat you differently for exercising your rights.</p>
   </section>
 
   <section id="delete">
-    <h2><span class="n">16</span>Deleting your account and data</h2>
+    <h2><span class="n">17</span>Deleting your account and data</h2>
     <h3>In the app</h3>
     <ol class="steps">
       <li>Open <b>Walloo → Settings</b>.</li>
       <li>Tap your account card at the top.</li>
       <li>Tap <b>Delete account</b> and confirm.</li>
     </ol>
-    <p>This permanently deletes your Walloo account, your profile, your synced favorites and folders, and every collection you published. Likes you gave to other people's collections may remain as anonymous counts, no longer linked to any account.</p>
+    <p>This permanently deletes your Walloo account, your profile, your synced favorites and folders, and every collection you published with earlier versions of the app. Likes you gave to other people's collections may remain as anonymous counts, no longer linked to any account.</p>
     <h3>Without the app</h3>
     <p>Use our <a href="https://maidene-droid.github.io/walloo-legal/delete_account.html">account deletion page</a> or email us. We delete your account and its data within 30 days.</p>
+    <h3>Live Weather</h3>
+    <p>Live Weather's anonymous identifier is not linked to your Google account, so deleting your account does not affect it. Turn Live Weather off or clear Walloo's data to stop using it; the identifier and its daily counts are then deleted automatically as described in <a href="#retention">section 14</a>.</p>
     <h3>Data on your phone</h3>
-    <p>Everything stored only on your phone is removed when you clear Walloo's data in Android settings or uninstall the app. Analytics and crash data are not linked to your account and expire as described in <a href="#retention">section 13</a>.</p>
+    <p>Everything stored only on your phone is removed when you clear Walloo's data in Android settings or uninstall the app. Analytics and crash data are not linked to your account and expire as described in <a href="#retention">section 14</a>.</p>
   </section>
 
   <section id="children">
-    <h2><span class="n">17</span>Children</h2>
+    <h2><span class="n">18</span>Children</h2>
     <p>Walloo is a general-audience app and is <b>not directed to children under 13</b> (or the minimum age of digital consent in your country, such as 16 in some EU countries). We do not knowingly collect personal data from children. If you believe a child has given us personal data, contact us and we will delete it.</p>
   </section>
 
   <section id="security">
-    <h2><span class="n">18</span>Security</h2>
+    <h2><span class="n">19</span>Security</h2>
     <ul>
       <li>All network traffic uses encrypted connections (HTTPS/TLS).</li>
       <li>Our cloud database uses security rules: only you can read or change your own account data, and only you can edit your collections.</li>
       <li>Your Walloo Pro status is kept in encrypted storage on your phone.</li>
+      <li>The Live Weather server only accepts requests from the genuine Walloo app (Firebase App Check with Play Integrity) and limits how many requests each phone can make per day.</li>
       <li>Access to our Firebase and Google Cloud project is restricted to the developer.</li>
     </ul>
     <p>No system is perfectly secure, but we take reasonable measures to protect your information and will inform you and the authorities of a breach where the law requires it.</p>
   </section>
 
   <section id="changes">
-    <h2><span class="n">19</span>Changes to this policy</h2>
+    <h2><span class="n">20</span>Changes to this policy</h2>
     <p>When Walloo changes in a way that affects your data, we update this page and its effective date. For significant changes, we will also tell you in the app before they take effect. Earlier versions are available on request.</p>
   </section>
 
   <section id="contact">
-    <h2><span class="n">20</span>Contact</h2>
+    <h2><span class="n">21</span>Contact</h2>
     <div class="contact">
       <div class="eyebrow">Privacy questions &amp; requests</div>
       <h3>Walloo: 4K Wallpapers</h3>
+      <p>Benko Emil, trading as Halo Apps, Calea Ipotesti 365, 727325 Ipotesti, Suceava, Romania</p>
       <p>Google Play package: com.walloo.wallpapper</p>
       <p>Email: <a href="mailto:maiden.e@gmail.com">maiden.e@gmail.com</a></p>
       <p>Account deletion: <a href="https://maidene-droid.github.io/walloo-legal/delete_account.html">delete_account.html</a></p>
@@ -480,7 +517,7 @@
       </g>
     </svg>
     <span>© 2026 Walloo</span>
-    <span>Version 2.1.1 · effective 16 November 2026</span>
+    <span>Version 2.2 · effective 23 November 2026</span>
   </footer>
 
 </div>
